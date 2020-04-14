@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>untagged on Jack&#39;s Blog</title>
+    <link>https://Lu-dashuai.github.io/tags/untagged/</link>
+    <description>Recent content in untagged on Jack&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 15 Apr 2018 21:17:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://Lu-dashuai.github.io/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test</title>
+      <link>https://Lu-dashuai.github.io/posts/acha/</link>
+      <pubDate>Sun, 15 Apr 2018 21:17:44 +0800</pubDate>
+      
+      <guid>https://Lu-dashuai.github.io/posts/acha/</guid>
+      <description>标题一 啦啦啦 标题二 嘻嘻</description>
+    </item>
+    
+  </channel>
+</rss>
