@@ -1,10 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Posts on Jack</title>
+		<title>Posts on Jack&#39;s Blog</title>
 		<link>https://Lu-dashuai.github.io/posts/</link>
-		<description>Recent content in Posts on Jack</description>
+		<description>Recent content in Posts on Jack&#39;s Blog</description>
 		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
+		<language>zh-CN</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
 		<lastBuildDate>Sat, 14 Apr 2018 16:41:36 +0800</lastBuildDate>
 		<atom:link href="https://Lu-dashuai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -15,8 +15,26 @@
 			<pubDate>Sat, 14 Apr 2018 16:41:36 +0800</pubDate>
 			
 			<guid>https://Lu-dashuai.github.io/posts/haha/</guid>
-			<description>参考博客</description>
-			<content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/Codemandyk/p/10855891.html">参考博客</a></p>
+			<description>环境搭建参考博客 codeSheep教程 开始用hugo写博客 每次编写完博客，直接运行： hugo 然后 cd 进入public 目录下： git add . git commit -m &#39;输入内容&#39;</description>
+			<content type="html"><![CDATA[<h2 id="环境搭建参考博客">环境搭建参考博客</h2>
+<p><a href="https://www.cnblogs.com/Codemandyk/p/10855891.html">codeSheep教程</a></p>
+<h2 id="开始用hugo写博客">开始用hugo写博客</h2>
+<ul>
+<li>每次编写完博客，直接运行：</li>
+</ul>
+<pre><code>hugo
+</code></pre><ul>
+<li>然后 <strong>cd</strong> 进入public 目录下：</li>
+</ul>
+<pre><code>git add .
+git commit -m '输入内容'
+git push -u origin master
+</code></pre><ul>
+<li>此时等待一会，博客内容就更新好了。</li>
+<li>博客地址<br>
+<a href="https://lu-dashuai.github.io/">jack.lu</a></li>
+</ul>
+<h2 id="感谢观看">感谢观看</h2>
 ]]></content>
 		</item>
 		
