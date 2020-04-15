@@ -6,27 +6,8 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>zh-CN</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 15 Apr 2018 21:17:44 +0800</lastBuildDate>
+		<lastBuildDate>Sat, 14 Apr 2018 16:41:36 +0800</lastBuildDate>
 		<atom:link href="https://Lu-dashuai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>test</title>
-			<link>https://Lu-dashuai.github.io/posts/acha/</link>
-			<pubDate>Sun, 15 Apr 2018 21:17:44 +0800</pubDate>
-			
-			<guid>https://Lu-dashuai.github.io/posts/acha/</guid>
-			<description>标题一 啦啦啦 标题二 嘻嘻</description>
-			<content type="html"><![CDATA[<h1 id="标题一">标题一</h1>
-<ul>
-<li>啦啦啦</li>
-<li><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1586880472398&amp;di=134ac3780c280264e36e88e9962ee400&amp;imgtype=0&amp;src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fa92621f8064335d85beaa77aed9b421be83e2a1c1dcb2-QczMv0_fw236" alt="茶姐"></li>
-</ul>
-<h1 id="标题二">标题二</h1>
-<ul>
-<li>嘻嘻</li>
-</ul>
-]]></content>
-		</item>
 		
 		<item>
 			<title>hugo搭建个人博客</title>
