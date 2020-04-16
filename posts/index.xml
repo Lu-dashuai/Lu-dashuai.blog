@@ -15,9 +15,8 @@
 			<pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
 			
 			<guid>https://Lu-dashuai.github.io/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%A1%B9%E7%9B%AE/</guid>
-			<description>自定义发送邮件系统 github地址 因项目还在完善，并有部分密钥，之后开源。 介绍：程序设计初衷，是想解决日常工作中一些每天都要重复工作的内容。</description>
-			<content type="html"><![CDATA[<h1 id="自定义发送邮件系统">自定义发送邮件系统</h1>
-<p><a href="https://github.com/Lu-dashuai/jack-email">github地址</a></p>
+			<description>github地址 因项目还在完善，并有部分密钥，之后开源。 介绍：程序设计初衷，是想解决日常工作中一些每天都要重复工作的内容。例如： 每天都要检查</description>
+			<content type="html"><![CDATA[<p><a href="https://github.com/Lu-dashuai/jack-email">github地址</a></p>
 <ul>
 <li>因项目还在完善，并有部分密钥，之后开源。</li>
 </ul>
@@ -94,11 +93,11 @@
 <ul>
 <li>使用 service 启动：service mysqld start</li>
 <li>使用 service 关闭：service mysqld stop</li>
-<li>异常：Your password does not satisfy the current policy requirements
-<a href="https://blog.csdn.net/hello_world_qwp/article/details/79551789">参考博客异常解决</a><!-- raw HTML omitted -->
-<a href="https://www.cnblogs.com/zzqit/p/10095597.html">MySQL只能服务器登录，远程链接失败</a><!-- raw HTML omitted -->
-<a href="https://jingyan.baidu.com/article/7c6fb428d60c6e80642c90ee.html">远程端口telnet开启测试</a><!-- raw HTML omitted -->
-<a href="https://www.cnblogs.com/rxbook/p/8110143.html">给防火墙开启端口</a></li>
+<li>异常：Your password does not satisfy the current policy requirements<!-- raw HTML omitted -->
+-  <a href="https://blog.csdn.net/hello_world_qwp/article/details/79551789">参考博客异常解决</a><!-- raw HTML omitted -->
+- <a href="https://www.cnblogs.com/zzqit/p/10095597.html">MySQL只能服务器登录，远程链接失败</a><!-- raw HTML omitted -->
+- <a href="https://jingyan.baidu.com/article/7c6fb428d60c6e80642c90ee.html">远程端口telnet开启测试</a><!-- raw HTML omitted -->
+- <a href="https://www.cnblogs.com/rxbook/p/8110143.html">给防火墙开启端口</a></li>
 </ul>
 </li>
 </ol>
