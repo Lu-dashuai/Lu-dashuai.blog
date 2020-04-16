@@ -100,6 +100,25 @@
 - <a href="https://www.cnblogs.com/rxbook/p/8110143.html">给防火墙开启端口</a></li>
 </ul>
 </li>
+<li>
+<p>启动、关闭、查看</p>
+<ul>
+<li>后台启动</li>
+</ul>
+<pre><code>  java -jar xxx.jar &gt; log.file &amp;
+</code></pre><ul>
+<li>关闭</li>
+</ul>
+<pre><code>  ps -ef|grep java
+</code></pre><ul>
+<li>查看日志</li>
+</ul>
+<pre><code>  cat log.file
+</code></pre></li>
+<li>
+<p>复制命令
+pscp xxx <a href="mailto:root@47.103.3.196">root@47.103.3.196</a>:/jack/war</p>
+</li>
 </ol>
 ]]></content>
 		</item>
