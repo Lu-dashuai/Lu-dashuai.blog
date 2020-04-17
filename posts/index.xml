@@ -218,10 +218,27 @@ git push -u origin master
 			<pubDate>Fri, 17 Apr 2015 18:22:35 +0800</pubDate>
 			
 			<guid>https://Lu-dashuai.github.io/posts/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%85%B1%E4%BA%AB%E7%AF%AE%E7%90%83/</guid>
-			<description>项目状态：已出 项目视频 B站看片 功能模块自己看片，本项目价格较低。</description>
+			<description>项目状态：已出 项目视频 B站看片 功能模块自己看片，本项目价格较低。 项目功能 概览 项目使用技术 jsp servlet mysql hibernate 工具：Intellij IDEA qq: 970638341</description>
 			<content type="html"><![CDATA[<h2 id="项目状态已出">项目状态：已出</h2>
 <h2 id="项目视频-b站看片">项目视频 <a href="">B站看片</a></h2>
 <h2 id="功能模块自己看片本项目价格较低">功能模块自己看片，本项目价格较低。</h2>
+<ul>
+<li>项目功能 概览</li>
+</ul>
+<p><img src="https://luruihua.oss-cn-beijing.aliyuncs.com/img/houtai/360%E6%88%AA%E5%9B%BE17040509297435.jpg" alt=""></p>
+<p><img src="https://luruihua.oss-cn-beijing.aliyuncs.com/img/houtai/360%E6%88%AA%E5%9B%BE1757111884112112.jpg" alt=""></p>
+<h2 id="项目使用技术">项目使用技术</h2>
+<ul>
+<li>jsp</li>
+<li>servlet</li>
+<li>mysql</li>
+<li>hibernate</li>
+<li>工具：Intellij IDEA</li>
+</ul>
+<hr>
+<ul>
+<li>qq: 970638341</li>
+</ul>
 ]]></content>
 		</item>
 		
@@ -304,6 +321,10 @@ git push -u origin master
 <li>服务器：Tomcat 8.5</li>
 <li>数据库：MySQL 5.0</li>
 <li>代码托管平台：GitHub</li>
+</ul>
+<hr>
+<ul>
+<li>qq: 970638341</li>
 </ul>
 ]]></content>
 		</item>
