@@ -51,34 +51,6 @@
       </item>
       
       <item>
-        <title>hugo搭建个人博客</title>
-        <link>https://lu-dashuai.github.io/posts/blogs/haha/</link>
-        <pubDate>Sat, 14 Apr 2018 16:41:36 +0800</pubDate>
-        <author>aluruihua@163.com (Jack.lu)</author>
-        <atom:modified>Sat, 14 Apr 2018 16:41:36 +0800</atom:modified>
-        <guid>https://lu-dashuai.github.io/posts/blogs/haha/</guid>
-        <description>环境搭建参考博客 codeSheep教程 开始用hugo写博客 每次编写完博客，直接运行： hugo 然后 cd 进入public 目录下： git add . git commit -m &#39;输入内容&#39;</description>
-        
-        <dc:creator>Jack.lu</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>hugo</category>
-            
-          
-            
-              <category>提交</category>
-            
-          
-        
-        
-        
-      </item>
-      
-      <item>
         <title>【毕业设计 共享篮球 or 共享单车】</title>
         <link>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%85%B1%E4%BA%AB%E7%AF%AE%E7%90%83/</link>
         <pubDate>Fri, 17 Apr 2015 18:22:35 +0800</pubDate>
