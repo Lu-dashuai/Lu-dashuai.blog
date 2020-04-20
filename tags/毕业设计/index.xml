@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>毕业设计 on Jack.lu</title>
+    <link>https://lu-dashuai.github.io/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/</link>
+    <description>Recent content in 毕业设计 on Jack.lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
+    <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 17 Apr 2015 18:22:35 +0800</lastBuildDate>
+    
+        <atom:link href="https://lu-dashuai.github.io/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>【毕业设计 共享篮球 or 共享单车】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%85%B1%E4%BA%AB%E7%AF%AE%E7%90%83/</link>
+        <pubDate>Fri, 17 Apr 2015 18:22:35 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Fri, 17 Apr 2015 18:22:35 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%85%B1%E4%BA%AB%E7%AF%AE%E7%90%83/</guid>
+        <description>项目状态：已出 项目视频 B站看片 功能模块自己看片，本项目价格较低。 另有这个项目的共享单车版本-功能一样，也可cs； 项目功能 概览 项目使用技术 jsp servlet</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>毕业设计</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>【毕业设计 仓库管理系统】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Fri, 17 Apr 2015 00:00:00 +0000</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+        <description>项目状态：已出 视频地址：B站看片 项目功能模块 系统概要 仓库管理系统总共分为两个大的模块，分别是系统模块和业务模块。其中系统模块和业务模块底下又</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>SpringBoot</category>
+            
+          
+            
+              <category>毕业设计</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Galleries on Jack.lu</title>
+    <link>https://lu-dashuai.github.io/gallery/</link>
+    <description>Recent content in Galleries on Jack.lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
+    <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 10:20:16 +0900</lastBuildDate>
+    
+        <atom:link href="https://lu-dashuai.github.io/gallery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Cartoon</title>
+        <link>https://lu-dashuai.github.io/gallery/cartoon/</link>
+        <pubDate>Mon, 01 Jan 2018 10:20:16 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Mon, 01 Jan 2018 10:20:16 +0900</atom:modified>
+        <guid>https://lu-dashuai.github.io/gallery/cartoon/</guid>
+        <description>Sample images from Pixabay</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        <media:content url="https://lu-dashuai.github.io/images/feature2/bam.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Photo</title>
+        <link>https://lu-dashuai.github.io/gallery/photo/</link>
+        <pubDate>Mon, 01 Jan 2018 10:20:16 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Mon, 01 Jan 2018 10:20:16 +0900</atom:modified>
+        <guid>https://lu-dashuai.github.io/gallery/photo/</guid>
+        <description>Sample images from Pixabay</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        <media:content url="https://lu-dashuai.github.io/images/feature2/gallery.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

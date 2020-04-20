@@ -1,106 +1,406 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Tags on Jack&#39;s Blog</title>
-    <link>https://Lu-dashuai.github.io/tags/</link>
-    <description>Recent content in Tags on Jack&#39;s Blog</description>
+    <title>Tags on Jack.lu</title>
+    <link>https://lu-dashuai.github.io/tags/</link>
+    <description>Recent content in Tags on Jack.lu</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <language>en</language>
+    <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
+    <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 16 Apr 2020 15:24:43 +0800</lastBuildDate>
     
-	<atom:link href="https://Lu-dashuai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://lu-dashuai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>nginx</title>
-      <link>https://Lu-dashuai.github.io/tags/nginx/</link>
-      <pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
+    
+
       
-      <guid>https://Lu-dashuai.github.io/tags/nginx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>quartz</title>
-      <link>https://Lu-dashuai.github.io/tags/quartz/</link>
-      <pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
+      <item>
+        <title>nginx</title>
+        <link>https://lu-dashuai.github.io/tags/nginx/</link>
+        <pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/nginx/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://Lu-dashuai.github.io/tags/quartz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>springboot</title>
-      <link>https://Lu-dashuai.github.io/tags/springboot/</link>
-      <pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
+      <item>
+        <title>quartz</title>
+        <link>https://lu-dashuai.github.io/tags/quartz/</link>
+        <pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/quartz/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://Lu-dashuai.github.io/tags/springboot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>springboot-email</title>
-      <link>https://Lu-dashuai.github.io/tags/springboot-email/</link>
-      <pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
+      <item>
+        <title>hugo</title>
+        <link>https://lu-dashuai.github.io/tags/hugo/</link>
+        <pubDate>Sat, 14 Apr 2018 16:41:36 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/hugo/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://Lu-dashuai.github.io/tags/springboot-email/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://Lu-dashuai.github.io/tags/hugo/</link>
-      <pubDate>Sat, 14 Apr 2018 16:41:36 +0800</pubDate>
+      <item>
+        <title>提交</title>
+        <link>https://lu-dashuai.github.io/tags/%E6%8F%90%E4%BA%A4/</link>
+        <pubDate>Sat, 14 Apr 2018 16:41:36 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/%E6%8F%90%E4%BA%A4/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://Lu-dashuai.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>提交</title>
-      <link>https://Lu-dashuai.github.io/tags/%E6%8F%90%E4%BA%A4/</link>
-      <pubDate>Sat, 14 Apr 2018 16:41:36 +0800</pubDate>
+      <item>
+        <title>docker</title>
+        <link>https://lu-dashuai.github.io/tags/docker/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/docker/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://Lu-dashuai.github.io/tags/%E6%8F%90%E4%BA%A4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://Lu-dashuai.github.io/tags/java/</link>
-      <pubDate>Fri, 17 Apr 2015 18:22:35 +0800</pubDate>
+      <item>
+        <title>Double</title>
+        <link>https://lu-dashuai.github.io/tags/double/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/double/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://Lu-dashuai.github.io/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web</title>
-      <link>https://Lu-dashuai.github.io/tags/web/</link>
-      <pubDate>Fri, 17 Apr 2015 18:22:35 +0800</pubDate>
+      <item>
+        <title>github</title>
+        <link>https://lu-dashuai.github.io/tags/github/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/github/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://Lu-dashuai.github.io/tags/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>共享</title>
-      <link>https://Lu-dashuai.github.io/tags/%E5%85%B1%E4%BA%AB/</link>
-      <pubDate>Fri, 17 Apr 2015 18:22:35 +0800</pubDate>
+      <item>
+        <title>Gradle</title>
+        <link>https://lu-dashuai.github.io/tags/gradle/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/gradle/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://Lu-dashuai.github.io/tags/%E5%85%B1%E4%BA%AB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mysql</title>
-      <link>https://Lu-dashuai.github.io/tags/mysql/</link>
-      <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
+      <item>
+        <title>JVM</title>
+        <link>https://lu-dashuai.github.io/tags/jvm/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/jvm/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://Lu-dashuai.github.io/tags/mysql/</guid>
-      <description></description>
-    </item>
+      <item>
+        <title>mybatis-plus</title>
+        <link>https://lu-dashuai.github.io/tags/mybatis-plus/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/mybatis-plus/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>mysql</title>
+        <link>https://lu-dashuai.github.io/tags/mysql/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/mysql/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>redis</title>
+        <link>https://lu-dashuai.github.io/tags/redis/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/redis/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>restfulApi</title>
+        <link>https://lu-dashuai.github.io/tags/restfulapi/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/restfulapi/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>SpringBoot</title>
+        <link>https://lu-dashuai.github.io/tags/springboot/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/springboot/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>SpringCloud</title>
+        <link>https://lu-dashuai.github.io/tags/springcloud/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/springcloud/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>tomcat</title>
+        <link>https://lu-dashuai.github.io/tags/tomcat/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/tomcat/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>vue</title>
+        <link>https://lu-dashuai.github.io/tags/vue/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/vue/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>数据结构&amp;算法</title>
+        <link>https://lu-dashuai.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>源码</title>
+        <link>https://lu-dashuai.github.io/tags/%E6%BA%90%E7%A0%81/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/%E6%BA%90%E7%A0%81/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>线程池</title>
+        <link>https://lu-dashuai.github.io/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>毕业设计</title>
+        <link>https://lu-dashuai.github.io/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/</link>
+        <pubDate>Fri, 17 Apr 2015 18:22:35 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
     
   </channel>
 </rss>

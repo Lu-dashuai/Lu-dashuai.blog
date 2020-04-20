@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>redis on Jack.lu</title>
+    <link>https://lu-dashuai.github.io/tags/redis/</link>
+    <description>Recent content in redis on Jack.lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
+    <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 16 Jan 2018 12:00:06 +0900</lastBuildDate>
+    
+        <atom:link href="https://lu-dashuai.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>需要不断学习的技术栈</title>
+        <link>https://lu-dashuai.github.io/mytag/tag-%E9%9C%80%E8%A6%81%E4%B8%8D%E6%96%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
+        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Tue, 16 Jan 2018 12:00:06 +0900</atom:modified>
+        <guid>https://lu-dashuai.github.io/mytag/tag-%E9%9C%80%E8%A6%81%E4%B8%8D%E6%96%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/</guid>
+        <description>Java基础 JVM 线程池 源码 Java框架 springCloud springBoot Double 若伊 quartz(正在进行中) mybatis-plus(正在进行中) 工具 Gradle restful API 数据库 存储引擎 索引 锁</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>JVM</category>
+            
+          
+            
+              <category>线程池</category>
+            
+          
+            
+              <category>源码</category>
+            
+          
+            
+              <category>SpringCloud</category>
+            
+          
+            
+              <category>SpringBoot</category>
+            
+          
+            
+              <category>Double</category>
+            
+          
+            
+              <category>github</category>
+            
+          
+            
+              <category>quartz</category>
+            
+          
+            
+              <category>mybatis-plus</category>
+            
+          
+            
+              <category>Gradle</category>
+            
+          
+            
+              <category>restfulApi</category>
+            
+          
+            
+              <category>mysql</category>
+            
+          
+            
+              <category>nginx</category>
+            
+          
+            
+              <category>redis</category>
+            
+          
+            
+              <category>tomcat</category>
+            
+          
+            
+              <category>数据结构&amp;算法</category>
+            
+          
+            
+              <category>docker</category>
+            
+          
+            
+              <category>vue</category>
+            
+          
+        
+        
+          
+            
+              <category>Java基础</category>
+            
+          
+            
+              <category>Java框架</category>
+            
+          
+            
+              <category>工具</category>
+            
+          
+            
+              <category>数据库</category>
+            
+          
+            
+              <category>中间件</category>
+            
+          
+            
+              <category>数据结构和算法</category>
+            
+          
+            
+              <category>liunx</category>
+            
+          
+            
+              <category>前端</category>
+            
+          
+            
+              <category>毕业设计</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

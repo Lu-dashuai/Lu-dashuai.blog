@@ -1,334 +1,136 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on Jack&#39;s Blog</title>
-		<link>https://Lu-dashuai.github.io/posts/</link>
-		<description>Recent content in Posts on Jack&#39;s Blog</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>zh-CN</language>
-		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Thu, 16 Apr 2020 15:24:43 +0800</lastBuildDate>
-		<atom:link href="https://Lu-dashuai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>自定义发送邮件项目</title>
-			<link>https://Lu-dashuai.github.io/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%A1%B9%E7%9B%AE/</link>
-			<pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
-			
-			<guid>https://Lu-dashuai.github.io/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%A1%B9%E7%9B%AE/</guid>
-			<description>github地址 因项目还在完善，并有部分密钥，之后开源。 介绍：程序设计初衷，是想解决日常工作中一些每天都要重复工作的内容。例如： 每天都要检查</description>
-			<content type="html"><![CDATA[<p><a href="https://github.com/Lu-dashuai/jack-email">github地址</a></p>
-<ul>
-<li>因项目还在完善，并有部分密钥，之后开源。</li>
-</ul>
-<hr>
-<ul>
-<li>介绍：程序设计初衷，是想解决日常工作中一些每天都要重复工作的内容。例如：</li>
-</ul>
-<ol>
-<li>每天都要检查小红书的解密服务是否挂起（发送请求，看是否返回错误的状态码）</li>
-<li>每天都要检查淘宝天猫的解密服务是否挂起（发送请求，检查是否返回错误的状态码）</li>
-<li>希望每天给张叶发送一封邮件，有关气温，有关生活（爬虫）。</li>
-<li>待完善&hellip;</li>
-</ol>
-<hr>
-<ul>
-<li>程序设计：</li>
-</ul>
-<ol>
-<li>使用springboot、quartz、springboot-email;</li>
-<li>需要设计每个线程单独运行，执行一条定时任务。</li>
-<li>无任何web界面,后期如果需要，就用vue，写前后端分离的项目。使用nginx解决跨域问题。</li>
-<li>后期可以添加需要持久化的操作，就用mybatis-plus。</li>
-<li>最好能达到自动化部署（docker）</li>
-</ol>
-<hr>
-<ul>
-<li>希望学习到的技术：</li>
-</ul>
-<ol>
-<li>springboot-email</li>
-<li>nginx</li>
-<li>quartz(重点)</li>
-<li>docker（重点）</li>
-</ol>
-<hr>
-<h2 id="日记">日记</h2>
-<h3 id="20200412">20200412</h3>
-<p>今天给自己剃了头。
-完成email的单元测试。</p>
-<h3 id="20200413">20200413</h3>
-<ol start="0">
-<li>配置动态定时器，参考<a href="https://gitee.com/aluruihua/quartz-demo">github项目</a>;</li>
-<li>BeanFactoryPostProcessor接口牛逼之处，mybatis和spring集成后自定义mapper接口，没有实现类，但是spring可以自动注入。
-<a href="https://www.cnblogs.com/piepie/p/9061076.html">参考博客</a>，看不懂，不要紧，spring的高级特性还有很多地方需要学习，之后慢慢补;</li>
-</ol>
-<h3 id="20200415">20200415</h3>
-<ol>
-<li>今天初始化了前端你的项目，表格也写好了，但是还差一些按钮的功能，交给茶姐</li>
-<li>完成后台的查询所有有用任务的接口。等待联调。</li>
-</ol>
-<ul>
-<li>问题:1. 前后端分离的时候 nginx 解决跨域问题。</li>
-</ul>
-<h3 id="20200416">20200416</h3>
-<ol>
-<li>
-<p>完成淘宝天猫的业务代码的编写，指定为job1;</p>
-</li>
-<li>
-<p>完成小红书的业务代码的编写，指定为job2；</p>
-</li>
-<li>
-<p>corn 表达式的编写，<a href="http://www.bejson.com/othertools/cron/">corn测试</a></p>
-</li>
-<li>
-<p>完成数据库的迁移</p>
-<ul>
-<li>siqi-yaolingsan-san-yaojiuliu</li>
-<li>库名：quartz</li>
-</ul>
-</li>
-<li>
-<p>忘记mysql密码<a href="https://www.cnblogs.com/ryanzheng/p/9348723.html">参考博客</a></p>
-<ul>
-<li>使用 service 启动：service mysqld start</li>
-<li>使用 service 关闭：service mysqld stop</li>
-<li>异常：Your password does not satisfy the current policy requirements<!-- raw HTML omitted -->
--  <a href="https://blog.csdn.net/hello_world_qwp/article/details/79551789">参考博客异常解决</a><!-- raw HTML omitted -->
-- <a href="https://www.cnblogs.com/zzqit/p/10095597.html">MySQL只能服务器登录，远程链接失败</a><!-- raw HTML omitted -->
-- <a href="https://jingyan.baidu.com/article/7c6fb428d60c6e80642c90ee.html">远程端口telnet开启测试</a><!-- raw HTML omitted -->
-- <a href="https://www.cnblogs.com/rxbook/p/8110143.html">给防火墙开启端口</a></li>
-</ul>
-</li>
-<li>
-<p>启动、关闭、查看</p>
-<ul>
-<li>后台启动</li>
-</ul>
-<pre><code>  java -jar xxx.jar &gt; log.file &amp;
-</code></pre><ul>
-<li>关闭</li>
-</ul>
-<pre><code>  ps -ef|grep java
-</code></pre><ul>
-<li>查看日志</li>
-</ul>
-<pre><code>  cat log.file
-</code></pre></li>
-<li>
-<p>复制命令</p>
-</li>
-</ol>
-<pre><code>   pscp xxx root@47.103.3.196:/jack/war
-</code></pre><ol start="8">
-<li>本地发送邮件成功，但是部署到阿里云服务器发送邮件失败。</li>
-</ol>
-<ul>
-<li><a href="https://blog.csdn.net/weixin_38575051/article/details/93591123">参考博客</a></li>
-</ul>
-]]></content>
-		</item>
-		
-		<item>
-			<title>需要不断学习的技术栈</title>
-			<link>https://Lu-dashuai.github.io/posts/%E9%9C%80%E8%A6%81%E4%B8%8D%E6%96%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
-			<pubDate>Wed, 15 Apr 2020 18:50:08 +0800</pubDate>
-			
-			<guid>https://Lu-dashuai.github.io/posts/%E9%9C%80%E8%A6%81%E4%B8%8D%E6%96%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/</guid>
-			<description>Java基础 JVM 线程池 源码 Java框架 springCloud springBoot Double 若伊 quartz(正在进行中) mybatis-plus(正在进行中) 工具 Gradle restful API 数据库 存储引擎 索引 锁</description>
-			<content type="html"><![CDATA[<h3 id="java基础">Java基础</h3>
-<ul>
-<li>JVM</li>
-<li>线程池</li>
-<li>源码</li>
-</ul>
-<h3 id="java框架">Java框架</h3>
-<ul>
-<li>springCloud</li>
-<li>springBoot</li>
-<li>Double</li>
-<li>若伊</li>
-<li>quartz(正在进行中)</li>
-<li>mybatis-plus(正在进行中)</li>
-</ul>
-<h3 id="工具">工具</h3>
-<ul>
-<li>Gradle</li>
-<li>restful API</li>
-</ul>
-<h3 id="数据库">数据库</h3>
-<ul>
-<li>存储引擎</li>
-<li>索引</li>
-<li>锁</li>
-</ul>
-<h3 id="中间件">中间件</h3>
-<ul>
-<li>nginx</li>
-<li>redis</li>
-<li>tomcat</li>
-</ul>
-<h3 id="数据结构和算法">数据结构和算法</h3>
-<ul>
-<li>正在进行中</li>
-</ul>
-<h3 id="运维">运维</h3>
-<ul>
-<li>docker(正在进行中)</li>
-</ul>
-<h3 id="前端">前端</h3>
-<ul>
-<li>vue</li>
-</ul>
-]]></content>
-		</item>
-		
-		<item>
-			<title>hugo搭建个人博客</title>
-			<link>https://Lu-dashuai.github.io/posts/haha/</link>
-			<pubDate>Sat, 14 Apr 2018 16:41:36 +0800</pubDate>
-			
-			<guid>https://Lu-dashuai.github.io/posts/haha/</guid>
-			<description>环境搭建参考博客 codeSheep教程 开始用hugo写博客 每次编写完博客，直接运行： hugo 然后 cd 进入public 目录下： git add . git commit -m &#39;输入内容&#39;</description>
-			<content type="html"><![CDATA[<h2 id="环境搭建参考博客">环境搭建参考博客</h2>
-<p><a href="https://www.cnblogs.com/Codemandyk/p/10855891.html">codeSheep教程</a></p>
-<h2 id="开始用hugo写博客">开始用hugo写博客</h2>
-<ul>
-<li>每次编写完博客，直接运行：</li>
-</ul>
-<pre><code>hugo
-</code></pre><ul>
-<li>然后 <strong>cd</strong> 进入public 目录下：</li>
-</ul>
-<pre><code>git add .
-git commit -m '输入内容'
-git push -u origin master
-</code></pre><ul>
-<li>此时等待一会，博客内容就更新好了。</li>
-<li>博客地址<br>
-<a href="https://lu-dashuai.github.io/">jack.lu</a></li>
-</ul>
-<h2 id="感谢观看">感谢观看</h2>
-]]></content>
-		</item>
-		
-		<item>
-			<title>【毕业设计 共享篮球 or 共享单车】</title>
-			<link>https://Lu-dashuai.github.io/posts/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%85%B1%E4%BA%AB%E7%AF%AE%E7%90%83/</link>
-			<pubDate>Fri, 17 Apr 2015 18:22:35 +0800</pubDate>
-			
-			<guid>https://Lu-dashuai.github.io/posts/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%85%B1%E4%BA%AB%E7%AF%AE%E7%90%83/</guid>
-			<description>项目状态：已出 项目视频 B站看片 功能模块自己看片，本项目价格较低。 另有这个项目的共享单车版本-功能一样，也可cs； 项目功能 概览 项目使用技术 jsp servlet</description>
-			<content type="html"><![CDATA[<h2 id="项目状态已出">项目状态：已出</h2>
-<h2 id="项目视频-b站看片">项目视频 <a href="">B站看片</a></h2>
-<h2 id="功能模块自己看片本项目价格较低">功能模块自己看片，本项目价格较低。</h2>
-<p>另有这个项目的共享单车版本-功能一样，也可cs；</p>
-<ul>
-<li>项目功能 概览</li>
-</ul>
-<p><img src="https://luruihua.oss-cn-beijing.aliyuncs.com/img/houtai/360%E6%88%AA%E5%9B%BE17040509297435.jpg" alt=""></p>
-<p><img src="https://luruihua.oss-cn-beijing.aliyuncs.com/img/houtai/360%E6%88%AA%E5%9B%BE1757111884112112.jpg" alt=""></p>
-<h2 id="项目使用技术">项目使用技术</h2>
-<ul>
-<li>jsp</li>
-<li>servlet</li>
-<li>mysql</li>
-<li>hibernate</li>
-<li>工具：Intellij IDEA</li>
-</ul>
-<hr>
-<ul>
-<li>qq: 970638341</li>
-</ul>
-]]></content>
-		</item>
-		
-		<item>
-			<title>【毕业设计 仓库管理系统】</title>
-			<link>https://Lu-dashuai.github.io/posts/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
-			<pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
-			
-			<guid>https://Lu-dashuai.github.io/posts/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
-			<description>项目状态：已出 视频地址：B站看片 项目功能模块 系统概要 仓库管理系统总共分为两个大的模块，分别是系统模块和业务模块。其中系统模块和业务模块底下又</description>
-			<content type="html"><![CDATA[<h2 id="项目状态已出">项目状态：已出</h2>
-<h2 id="视频地址b站看片httpswwwbilibilicomvideobv19a4y1x7md">视频地址：<a href="https://www.bilibili.com/video/BV19a4y1x7MD">B站看片</a></h2>
-<h2 id="项目功能模块">项目功能模块</h2>
-<h3 id="系统概要">系统概要</h3>
-<p>仓库管理系统总共分为两个大的模块，分别是系统模块和业务模块。其中系统模块和业务模块底下又有其子模块。</p>
-<h3 id="功能模块">功能模块</h3>
-<h4 id="一业务模块">一、业务模块</h4>
-<h5 id="1客户管理">1、客户管理</h5>
-<h6 id="客户列表">客户列表</h6>
-<h6 id="客户分页和模糊查询">客户分页和模糊查询</h6>
-<h6 id="客户添加修改删除批量删除">客户添加、修改、删除、批量删除</h6>
-<h5 id="2供应商管理">2、供应商管理</h5>
-<h6 id="供应商列表">供应商列表</h6>
-<h6 id="供应商分页和模糊查询">供应商分页和模糊查询</h6>
-<h6 id="供应商添加修改删除批量删除">供应商添加、修改、删除、批量删除</h6>
-<h5 id="3商品管理">3、商品管理</h5>
-<h6 id="商品列表">商品列表</h6>
-<h6 id="商品分页和模糊查询">商品分页和模糊查询</h6>
-<h6 id="商品添加修改删除商品图片的上传">商品添加、修改、删除、商品图片的上传</h6>
-<h5 id="4商品进货管理">4、商品进货管理</h5>
-<h6 id="商品进货列表">商品进货列表</h6>
-<h6 id="商品进货分页和模糊查询">商品进货分页和模糊查询</h6>
-<h6 id="商品进货添加修改删除商品退货">商品进货添加、修改、删除、商品退货</h6>
-<h5 id="5商品退货管理">5、商品退货管理</h5>
-<h6 id="商品退货列表">商品退货列表</h6>
-<h6 id="商品退货分页和模糊查询">商品退货分页和模糊查询</h6>
-<h6 id="商品退货删除">商品退货删除</h6>
-<h5 id="6商品销售管理">6、商品销售管理</h5>
-<h6 id="商品销售列表">商品销售列表</h6>
-<h6 id="商品销售分页和模糊查询">商品销售分页和模糊查询</h6>
-<h6 id="商品销售添加修改删除商品销售退货">商品销售添加、修改、删除、商品销售退货</h6>
-<h5 id="7商品销售退货管理">7、商品销售退货管理</h5>
-<h6 id="商品销售退货列表">商品销售退货列表</h6>
-<h6 id="商品销售退货分页和模糊查询">商品销售退货分页和模糊查询</h6>
-<h6 id="商品销售退货删除">商品销售退货删除</h6>
-<h4 id="二系统模块">二、系统模块</h4>
-<h5 id="1用户登陆">1、用户登陆</h5>
-<h6 id="校验用户名密码以及验证码">校验用户名、密码以及验证码</h6>
-<h6 id="登陆成功将登陆信息写入登陆日志">登陆成功将登陆信息写入登陆日志</h6>
-<h6 id="未登录直接访问服务器资源进行拦截">未登录直接访问服务器资源进行拦截</h6>
-<h5 id="2菜单管理">2、菜单管理</h5>
-<h6 id="全查询菜单和根据左边的树查询不同菜单">全查询菜单和根据左边的树查询不同菜单</h6>
-<h6 id="菜单的添加修改删除">菜单的添加、修改、删除</h6>
-<h5 id="3角色管理">3、角色管理</h5>
-<h6 id="全查询角色和模糊查询">全查询角色和模糊查询</h6>
-<h6 id="角色的添加修改删除以及给角色分配权限">角色的添加、修改、删除以及给角色分配权限</h6>
-<h5 id="4用户管理">4、用户管理</h5>
-<h6 id="全查询用户和模糊查询">全查询用户和模糊查询</h6>
-<h6 id="用户的添加修改删除重置密码以及给用户分配角色">用户的添加、修改、删除、重置密码以及给用户分配角色</h6>
-<h5 id="5部门管理">5、部门管理</h5>
-<h6 id="全查询部门模糊查询以及根据左边的树查询不同的部门">全查询部门、模糊查询以及根据左边的树查询不同的部门</h6>
-<h6 id="部门的添加修改删除">部门的添加、修改、删除</h6>
-<h3 id="技术选型">技术选型</h3>
-<h4 id="后台技术选型">后台技术选型</h4>
-<ul>
-<li>SpringBoot</li>
-<li>Shiro</li>
-<li>MybatisPlus</li>
-</ul>
-<h4 id="前端技术选型">前端技术选型</h4>
-<ul>
-<li>LayUI、DTree</li>
-</ul>
-<h3 id="开发环境">开发环境</h3>
-<ul>
-<li>操作系统：Windows 10</li>
-<li>编程语言：Java</li>
-<li>开发工具：IDEA、Navicat、Git</li>
-<li>项目构建：Maven 3.5.2</li>
-<li>服务器：Tomcat 8.5</li>
-<li>数据库：MySQL 5.0</li>
-<li>代码托管平台：GitHub</li>
-</ul>
-<hr>
-<ul>
-<li>qq: 970638341</li>
-</ul>
-]]></content>
-		</item>
-		
-	</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Posts on Jack.lu</title>
+    <link>https://lu-dashuai.github.io/posts/</link>
+    <description>Recent content in Posts on Jack.lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
+    <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 16 Apr 2020 15:24:43 +0800</lastBuildDate>
+    
+        <atom:link href="https://lu-dashuai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>自定义发送邮件项目</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%A1%B9%E7%9B%AE/</link>
+        <pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Thu, 16 Apr 2020 15:24:43 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%A1%B9%E7%9B%AE/</guid>
+        <description>github地址 因项目还在完善，并有部分密钥，之后开源。 介绍：程序设计初衷，是想解决日常工作中一些每天都要重复工作的内容。例如： 每天都要检查</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>quartz</category>
+            
+          
+            
+              <category>nginx</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>hugo搭建个人博客</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/haha/</link>
+        <pubDate>Sat, 14 Apr 2018 16:41:36 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Sat, 14 Apr 2018 16:41:36 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/haha/</guid>
+        <description>环境搭建参考博客 codeSheep教程 开始用hugo写博客 每次编写完博客，直接运行： hugo 然后 cd 进入public 目录下： git add . git commit -m &#39;输入内容&#39;</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>hugo</category>
+            
+          
+            
+              <category>提交</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>【毕业设计 共享篮球 or 共享单车】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%85%B1%E4%BA%AB%E7%AF%AE%E7%90%83/</link>
+        <pubDate>Fri, 17 Apr 2015 18:22:35 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Fri, 17 Apr 2015 18:22:35 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%85%B1%E4%BA%AB%E7%AF%AE%E7%90%83/</guid>
+        <description>项目状态：已出 项目视频 B站看片 功能模块自己看片，本项目价格较低。 另有这个项目的共享单车版本-功能一样，也可cs； 项目功能 概览 项目使用技术 jsp servlet</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>毕业设计</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>【毕业设计 仓库管理系统】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Fri, 17 Apr 2015 00:00:00 +0000</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+        <description>项目状态：已出 视频地址：B站看片 项目功能模块 系统概要 仓库管理系统总共分为两个大的模块，分别是系统模块和业务模块。其中系统模块和业务模块底下又</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>SpringBoot</category>
+            
+          
+            
+              <category>毕业设计</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
 </rss>
