@@ -44,6 +44,58 @@
 
       
       <item>
+        <title>Docker学习</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/docker%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Thu, 16 Apr 2020 15:51:57 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Thu, 16 Apr 2020 15:51:57 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/docker%E5%AD%A6%E4%B9%A0/</guid>
+        <description>学习资料 b站学习视频 百度云资料&amp;mdash;提取码：aeu2</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>docker</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>自定义发送邮件项目</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%A1%B9%E7%9B%AE/</link>
+        <pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Thu, 16 Apr 2020 15:24:43 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%A1%B9%E7%9B%AE/</guid>
+        <description>github地址 因项目还在完善，并有部分密钥，之后开源。 介绍：程序设计初衷，是想解决日常工作中一些每天都要重复工作的内容。例如： 每天都要检查</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>quartz</category>
+            
+          
+            
+              <category>nginx</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>需要不断学习的技术栈</title>
         <link>https://lu-dashuai.github.io/mytag/tag-%E9%9C%80%E8%A6%81%E4%B8%8D%E6%96%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
         <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
@@ -481,6 +533,30 @@
               <category>毕业设计</category>
             
           
+        
+        
+      </item>
+      
+      <item>
+        <title>mysql让主键id重新排序</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/mysql%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/posts/blogs/mysql%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</guid>
+        <description>对数据表操作之前备份一下是个好习惯 备份表结构 1 create table table_bak like table_name; 备份表数据 1 insert into table_bak select * from table_name; 删除原来主键字段(如id) 1 alter table table_name drop id; 添加主键，自增，放在</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>mysql</category>
+            
+          
+        
         
         
       </item>

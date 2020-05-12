@@ -152,6 +152,30 @@
         
       </item>
       
+      <item>
+        <title>mysql让主键id重新排序</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/mysql%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/posts/blogs/mysql%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</guid>
+        <description>对数据表操作之前备份一下是个好习惯 备份表结构 1 create table table_bak like table_name; 备份表数据 1 insert into table_bak select * from table_name; 删除原来主键字段(如id) 1 alter table table_name drop id; 添加主键，自增，放在</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>mysql</category>
+            
+          
+        
+        
+        
+      </item>
+      
 
     
   </channel>

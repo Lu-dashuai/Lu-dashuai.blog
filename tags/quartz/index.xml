@@ -14,13 +14,41 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 16 Jan 2018 12:00:06 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 15:24:43 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/tags/quartz/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>自定义发送邮件项目</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%A1%B9%E7%9B%AE/</link>
+        <pubDate>Thu, 16 Apr 2020 15:24:43 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Thu, 16 Apr 2020 15:24:43 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%A1%B9%E7%9B%AE/</guid>
+        <description>github地址 因项目还在完善，并有部分密钥，之后开源。 介绍：程序设计初衷，是想解决日常工作中一些每天都要重复工作的内容。例如： 每天都要检查</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>quartz</category>
+            
+          
+            
+              <category>nginx</category>
+            
+          
+        
+        
+        
+      </item>
       
       <item>
         <title>需要不断学习的技术栈</title>
