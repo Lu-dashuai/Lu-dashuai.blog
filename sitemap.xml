@@ -13,22 +13,42 @@
   </url>
   
   <url>
+    <loc>https://lu-dashuai.github.io/categories/</loc>
+    <lastmod>2020-05-15T15:51:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/categories/java%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2020-05-15T15:51:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/posts/blogs/java%E5%9F%BA%E7%A1%80__%E6%9E%9A%E4%B8%BE/</loc>
+    <lastmod>2020-05-15T15:51:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/posts/</loc>
+    <lastmod>2020-05-15T15:51:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/tags/</loc>
+    <lastmod>2020-05-15T15:51:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/tags/%E6%9E%9A%E4%B8%BE/</loc>
+    <lastmod>2020-05-15T15:51:57+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lu-dashuai.github.io/tags/docker/</loc>
     <lastmod>2020-04-16T15:51:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://lu-dashuai.github.io/posts/blogs/docker%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-04-16T15:51:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lu-dashuai.github.io/posts/</loc>
-    <lastmod>2020-04-16T15:51:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lu-dashuai.github.io/tags/</loc>
     <lastmod>2020-04-16T15:51:57+08:00</lastmod>
   </url>
   
@@ -123,11 +143,6 @@
   </url>
   
   <url>
-    <loc>https://lu-dashuai.github.io/categories/</loc>
-    <lastmod>2018-01-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lu-dashuai.github.io/tags/double/</loc>
     <lastmod>2018-01-16T12:00:06+09:00</lastmod>
   </url>
@@ -139,11 +154,6 @@
   
   <url>
     <loc>https://lu-dashuai.github.io/tags/gradle/</loc>
-    <lastmod>2018-01-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lu-dashuai.github.io/categories/java%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2018-01-16T12:00:06+09:00</lastmod>
   </url>
   
