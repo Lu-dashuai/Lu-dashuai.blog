@@ -1618,46 +1618,82 @@
 </ul>
 <h1 id="常用的linux命令">常用的linux命令</h1>
 <h2 id="docker-进程相关命令">Docker 进程相关命令</h2>
-<p>⚫ 启动docker服务:<br><br />
-systemctl start docker <br><br />
-⚫ 停止docker服务:<br><br />
-systemctl stop docker <br><br />
-⚫ 重启docker服务:<br><br />
-systemctl restart docker<br><br />
-⚫ 查看docker服务状态:<br><br />
-systemctl status docker <br><br />
-⚫ 设置开机启动docker服务:<br><br />
-systemctl enable docker<br></p>
-<h2 id="docker-镜像相关命令">Docker 镜像相关命令</h2>
-<p>⚫ 查看镜像: 查看本地所有的镜像<br><br />
-docker images docker images –q # 查看所用镜像的id<br><br />
-⚫ 搜索镜像:从网络中查找需要的镜像<br><br />
-docker search 镜像名称<br><br />
-⚫ 拉取镜像:从Docker仓库下载镜像到本地，镜像名称格式为 名称:版本号，如果版本号不指定则是最新的版本。 如果不知道镜像版本，可以去docker hub 搜索对应镜像查看。<br> docker pull 镜像名称<br><br />
-⚫ 删除镜像: 删除本地镜像<br><br />
-docker rmi 镜像id # 删除指定本地镜像 docker rmi <code>docker images -q</code> # 删除所有本地镜像<br></p>
-<h2 id="docker-容器相关命令">Docker 容器相关命令</h2>
-<p>⚫ 查看容器<br><br />
-docker ps # 查看正在运行的容器 docker ps –a # 查看所有容器<br><br />
-⚫ 创建并启动容器<br><br />
-docker run 参数<br><br />
-参数说明： <br><br />
-• -i：保持容器运行。通常与-t 同时使用。加入it这两个参数后，容器创建后自动进入容器中，退出容器后，容器自动关闭。 <br><br />
-• -t：为容器重新分配一个伪输入终端，通常与-i 同时使用。 <br><br />
-• -d：以守护（后台）模式运行容器。创建一个容器在后台运行，需要使用dockerexec 进入容器。退出后，容器不会关闭。 <br><br />
-• -it 创建的容器一般称为交互式容器，-id 创建的容器一般称为守护式容器 <br><br />
-• &ndash;name：为创建的容器命名。<br><br />
-⚫ 进入容器<br><br />
-docker exec 参数 # 退出容器，容器不会关闭<br><br />
-⚫ 停止容器<br><br />
-docker stop 容器名称 <br><br />
-⚫ 启动容器<br><br />
-docker start 容器名称<br><br />
-⚫ 删除容器：如果容器是运行状态则删除失败，需要停止容器才能删除<br><br />
-docker rm 容器名称<br><br />
-⚫ 查看容器信息<br><br />
-docker inspect 容器名称<br></p>
-<h1 id="详细安装步骤">详细安装步骤</h1>
+<ul>
+<li>启动docker服务:</li>
+</ul>
+<pre><code>systemctl start docker 
+</code></pre><ul>
+<li>停止docker服务:</li>
+</ul>
+<pre><code>systemctl stop docker 
+</code></pre><ul>
+<li>重启docker服务:</li>
+</ul>
+<pre><code>systemctl restart docker
+</code></pre><ul>
+<li>查看docker服务状态:</li>
+</ul>
+<pre><code>systemctl status docker 
+</code></pre><ul>
+<li>设置开机启动docker服务:</li>
+</ul>
+<pre><code>systemctl enable docker
+</code></pre><h2 id="docker-镜像相关命令">Docker 镜像相关命令</h2>
+<ul>
+<li>查看镜像: 查看本地所有的镜像</li>
+</ul>
+<pre><code>docker images docker images –q # 查看所用镜像的id
+</code></pre><ul>
+<li>搜索镜像:从网络中查找需要的镜像</li>
+</ul>
+<pre><code>docker search 镜像名称
+</code></pre><ul>
+<li>拉取镜像:从Docker仓库下载镜像到本地，镜像名称格式为 名称:版本号，如果版本号不指定则是最新的版本。 如果不知道镜像版本，可以去docker hub 搜索对应镜像查看。</li>
+</ul>
+<pre><code>docker pull 镜像名称
+</code></pre><ul>
+<li>删除镜像: 删除本地镜像</li>
+</ul>
+<pre><code>docker rmi 镜像id # 删除指定本地镜像 
+
+docker rmi `docker images -q` # 删除所有本地镜像
+
+</code></pre><h2 id="docker-容器相关命令">Docker 容器相关命令</h2>
+<ul>
+<li>查看容器</li>
+</ul>
+<pre><code>docker ps # 查看正在运行的容器 docker ps –a # 查看所有容器
+</code></pre><ul>
+<li>创建并启动容器</li>
+</ul>
+<pre><code>docker run 参数
+</code></pre><p>参数说明：<br />
+• -i：保持容器运行。通常与-t 同时使用。加入it这两个参数后，容器创建后自动进入容器中，退出容器后，容器自动关闭。<br />
+• -t：为容器重新分配一个伪输入终端，通常与-i 同时使用。<br />
+• -d：以守护（后台）模式运行容器。创建一个容器在后台运行，需要使用dockerexec 进入容器。退出后，容器不会关闭。<br />
+• -it 创建的容器一般称为交互式容器，-id 创建的容器一般称为守护式容器<br />
+• &ndash;name：为创建的容器命名。</p>
+<ul>
+<li>进入容器</li>
+</ul>
+<pre><code>docker exec 参数 # 退出容器，容器不会关闭
+</code></pre><ul>
+<li>停止容器</li>
+</ul>
+<pre><code>docker stop 容器名称 
+</code></pre><ul>
+<li>启动容器</li>
+</ul>
+<pre><code>docker start 容器名称
+</code></pre><ul>
+<li>删除容器：如果容器是运行状态则删除失败，需要停止容器才能删除</li>
+</ul>
+<pre><code>docker rm 容器名称
+</code></pre><ul>
+<li>查看容器信息</li>
+</ul>
+<pre><code>docker inspect 容器名称
+</code></pre><h1 id="详细安装步骤">详细安装步骤</h1>
 <h2 id="卸载旧mysql">卸载旧mysql</h2>
 <ol>
 <li>使用SecureCRT.exe来连接，输入公网ip，用户名和密码&hellip;连上了<br />
