@@ -38,18 +38,26 @@
         
           
             
-              <category>mysql</category>
+              <category>Mysql</category>
+            
+          
+            
+              <category>Docker</category>
             
           
         
         
           
             
-              <category>liunx</category>
+              <category>Linux</category>
             
           
             
-              <category>数据库</category>
+              <category>数据库/SQL</category>
+            
+          
+            
+              <category>虚拟化容器</category>
             
           
         
@@ -75,11 +83,15 @@
               <category>枚举</category>
             
           
+            
+              <category>Java基础</category>
+            
+          
         
         
           
             
-              <category>Java基础</category>
+              <category>Java语言</category>
             
           
         
@@ -105,6 +117,10 @@
               <category>稀疏数组</category>
             
           
+            
+              <category>数据结构</category>
+            
+          
         
         
           
@@ -112,30 +128,6 @@
               <category>数据结构和算法</category>
             
           
-        
-        
-      </item>
-      
-      <item>
-        <title>Docker学习</title>
-        <link>https://lu-dashuai.github.io/posts/blogs/docker%E5%AD%A6%E4%B9%A0/</link>
-        <pubDate>Thu, 16 Apr 2020 15:51:57 +0800</pubDate>
-        <author>aluruihua@163.com (Jack.lu)</author>
-        <atom:modified>Thu, 16 Apr 2020 15:51:57 +0800</atom:modified>
-        <guid>https://lu-dashuai.github.io/posts/blogs/docker%E5%AD%A6%E4%B9%A0/</guid>
-        <description>学习资料 b站学习视频 百度云资料&amp;mdash;提取码：aeu2</description>
-        
-        <dc:creator>Jack.lu</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>docker</category>
-            
-          
-        
         
         
       </item>
@@ -156,14 +148,20 @@
         
           
             
-              <category>quartz</category>
+              <category>Quartz</category>
             
           
             
-              <category>nginx</category>
+              <category>Nginx</category>
             
           
         
+        
+          
+            
+              <category>项目</category>
+            
+          
         
         
       </item>
@@ -181,12 +179,6 @@
         
         
         
-        
-          
-            
-              <category>毕业设计</category>
-            
-          
         
         
           
@@ -212,12 +204,6 @@
         
         
         
-          
-            
-              <category>毕业设计</category>
-            
-          
-        
         
           
             
@@ -241,12 +227,6 @@
         
         
         
-        
-          
-            
-              <category>毕业设计</category>
-            
-          
         
         
           
@@ -272,16 +252,6 @@
         
         
         
-          
-            
-              <category>SpringBoot</category>
-            
-          
-            
-              <category>毕业设计</category>
-            
-          
-        
         
           
             
@@ -294,27 +264,17 @@
       
       <item>
         <title>【毕业设计 在线商城系统】</title>
-        <link>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%9C%A8%E7%BA%BF%E5%95%86%E5%9F%8E%E7%B3%BB%E7%BB%9F-copy/</link>
+        <link>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%9C%A8%E7%BA%BF%E5%95%86%E5%9F%8E%E7%B3%BB%E7%BB%9F/</link>
         <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
         <author>aluruihua@163.com (Jack.lu)</author>
         <atom:modified>Fri, 17 Apr 2015 00:00:00 +0000</atom:modified>
-        <guid>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%9C%A8%E7%BA%BF%E5%95%86%E5%9F%8E%E7%B3%BB%E7%BB%9F-copy/</guid>
+        <guid>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%9C%A8%E7%BA%BF%E5%95%86%E5%9F%8E%E7%B3%BB%E7%BB%9F/</guid>
         <description>项目状态 已出 视频地址 B站看片 这个系统非常适合做毕业设计，页面简单大方，功能完善； 本系统可以更改为任何类别的和商城有关的系统 技术选型 后台技术选</description>
         
         <dc:creator>Jack.lu</dc:creator>
         
         
         
-        
-          
-            
-              <category>SpringBoot</category>
-            
-          
-            
-              <category>毕业设计</category>
-            
-          
         
         
           
@@ -340,12 +300,6 @@
         
         
         
-          
-            
-              <category>毕业设计</category>
-            
-          
-        
         
           
             
@@ -369,12 +323,6 @@
         
         
         
-        
-          
-            
-              <category>毕业设计</category>
-            
-          
         
         
           
@@ -400,12 +348,6 @@
         
         
         
-          
-            
-              <category>毕业设计</category>
-            
-          
-        
         
           
             
@@ -430,16 +372,6 @@
         
         
         
-          
-            
-              <category>SpringBoot</category>
-            
-          
-            
-              <category>毕业设计</category>
-            
-          
-        
         
           
             
@@ -463,12 +395,6 @@
         
         
         
-        
-          
-            
-              <category>毕业设计</category>
-            
-          
         
         
           
@@ -496,10 +422,16 @@
         
           
             
-              <category>mysql</category>
+              <category>Mysql</category>
             
           
         
+        
+          
+            
+              <category>数据库/SQL</category>
+            
+          
         
         
       </item>

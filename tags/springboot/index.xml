@@ -29,7 +29,7 @@
         <author>aluruihua@163.com (Jack.lu)</author>
         <atom:modified>Tue, 16 Jan 2018 12:00:06 +0900</atom:modified>
         <guid>https://lu-dashuai.github.io/mytag/tag-%E9%9C%80%E8%A6%81%E4%B8%8D%E6%96%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/</guid>
-        <description>Java基础 JVM 线程池 源码 Java框架 springCloud springBoot Double 若伊 quartz(正在进行中) mybatis-plus(正在进行中) 工具 Gradle restful API 数据库 存储引擎 索引 锁</description>
+        <description>感谢 感谢b站up主程序🐏提供思维导图，让我在技术路上不迷路~</description>
         
         <dc:creator>Jack.Lu</dc:creator>
         
@@ -38,39 +38,75 @@
         
           
             
+              <category>Java基础</category>
+            
+          
+            
               <category>JVM</category>
             
           
             
-              <category>线程池</category>
+              <category>并发/多线程</category>
             
           
             
-              <category>源码</category>
+              <category>数据结构</category>
             
           
             
-              <category>SpringCloud</category>
+              <category>算法</category>
             
           
             
-              <category>SpringBoot</category>
+              <category>TCP/UDP协议</category>
             
           
             
-              <category>Double</category>
+              <category>HTTP/HTTPS协议</category>
             
           
             
-              <category>github</category>
+              <category>Session/Cookie</category>
             
           
             
-              <category>quartz</category>
+              <category>Mysql</category>
             
           
             
-              <category>mybatis-plus</category>
+              <category>SQL书写</category>
+            
+          
+            
+              <category>SQL优化</category>
+            
+          
+            
+              <category>数据库事务隔离级别</category>
+            
+          
+            
+              <category>数据库索引</category>
+            
+          
+            
+              <category>数据库锁</category>
+            
+          
+            
+              <category>Shell脚本</category>
+            
+          
+            
+              <category>Git</category>
+            
+          
+            
+              <category>SVN</category>
+            
+          
+            
+              <category>Maven</category>
             
           
             
@@ -78,58 +114,82 @@
             
           
             
-              <category>restfulApi</category>
+              <category>Spring</category>
             
           
             
-              <category>mysql</category>
+              <category>SpringMVC</category>
             
           
             
-              <category>nginx</category>
+              <category>SpringBoot</category>
             
           
             
-              <category>redis</category>
+              <category>Nginx</category>
             
           
             
-              <category>tomcat</category>
+              <category>Tomcat</category>
             
           
             
-              <category>数据结构&amp;算法</category>
+              <category>Redis</category>
             
           
             
-              <category>docker</category>
+              <category>RabbitMQ</category>
             
           
             
-              <category>vue</category>
+              <category>Dubbo</category>
+            
+          
+            
+              <category>Mybatis</category>
+            
+          
+            
+              <category>Nuzt</category>
+            
+          
+            
+              <category>SpringCloud</category>
+            
+          
+            
+              <category>Shiro</category>
+            
+          
+            
+              <category>SSO</category>
+            
+          
+            
+              <category>Quartz</category>
+            
+          
+            
+              <category>Docker</category>
+            
+          
+            
+              <category>Node</category>
+            
+          
+            
+              <category>Vue</category>
+            
+          
+            
+              <category>Jenkins</category>
             
           
         
         
           
             
-              <category>Java基础</category>
-            
-          
-            
-              <category>Java框架</category>
-            
-          
-            
-              <category>工具</category>
-            
-          
-            
-              <category>数据库</category>
-            
-          
-            
-              <category>中间件</category>
+              <category>Java语言</category>
             
           
             
@@ -137,7 +197,55 @@
             
           
             
-              <category>liunx</category>
+              <category>计算机网络</category>
+            
+          
+            
+              <category>数据库/SQL</category>
+            
+          
+            
+              <category>操作系统</category>
+            
+          
+            
+              <category>设计模式</category>
+            
+          
+            
+              <category>集成开发环境</category>
+            
+          
+            
+              <category>Linux</category>
+            
+          
+            
+              <category>代码管理工具</category>
+            
+          
+            
+              <category>项目管理/构建工具</category>
+            
+          
+            
+              <category>后端框架</category>
+            
+          
+            
+              <category>服务器软件</category>
+            
+          
+            
+              <category>中间件</category>
+            
+          
+            
+              <category>分布式</category>
+            
+          
+            
+              <category>虚拟化容器</category>
             
           
             
@@ -145,109 +253,15 @@
             
           
             
-              <category>毕业设计</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>【毕业设计 仓库管理系统】</title>
-        <link>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
-        <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
-        <author>aluruihua@163.com (Jack.lu)</author>
-        <atom:modified>Fri, 17 Apr 2015 00:00:00 +0000</atom:modified>
-        <guid>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
-        <description>项目状态 已出 视频地址 B站看片 系统概要 仓库管理系统总共分为两个大的模块，分别是系统模块和业务模块。其中系统模块和业务模块底下又有其子模块。 功能</description>
-        
-        <dc:creator>Jack.lu</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>SpringBoot</category>
+              <category>运维知识</category>
             
           
             
               <category>毕业设计</category>
             
           
-        
-        
-          
             
-              <category>毕业设计</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>【毕业设计 在线商城系统】</title>
-        <link>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%9C%A8%E7%BA%BF%E5%95%86%E5%9F%8E%E7%B3%BB%E7%BB%9F-copy/</link>
-        <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
-        <author>aluruihua@163.com (Jack.lu)</author>
-        <atom:modified>Fri, 17 Apr 2015 00:00:00 +0000</atom:modified>
-        <guid>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E5%9C%A8%E7%BA%BF%E5%95%86%E5%9F%8E%E7%B3%BB%E7%BB%9F-copy/</guid>
-        <description>项目状态 已出 视频地址 B站看片 这个系统非常适合做毕业设计，页面简单大方，功能完善； 本系统可以更改为任何类别的和商城有关的系统 技术选型 后台技术选</description>
-        
-        <dc:creator>Jack.lu</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>SpringBoot</category>
-            
-          
-            
-              <category>毕业设计</category>
-            
-          
-        
-        
-          
-            
-              <category>毕业设计</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>【毕业设计 文章/小说/新闻 发布平台（在线投稿系统）】</title>
-        <link>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%B9%B3%E5%8F%B0/</link>
-        <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
-        <author>aluruihua@163.com (Jack.lu)</author>
-        <atom:modified>Fri, 17 Apr 2015 00:00:00 +0000</atom:modified>
-        <guid>https://lu-dashuai.github.io/posts/bysj/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E5%B9%B3%E5%8F%B0/</guid>
-        <description>在线预览 B站查看功能演示 主要功能介绍 文章发布系统是一个管理系统，游客注册后可以登录网站属于文章进行评论，管理员可以登录进入管理员中心对网站信</description>
-        
-        <dc:creator>Jack.lu</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>SpringBoot</category>
-            
-          
-            
-              <category>毕业设计</category>
-            
-          
-        
-        
-          
-            
-              <category>毕业设计</category>
+              <category>项目</category>
             
           
         
