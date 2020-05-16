@@ -44,6 +44,40 @@
 
       
       <item>
+        <title>linux下mysql的安装</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/linux%E4%B8%8Bmysql%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+        <pubDate>Sat, 16 May 2020 15:51:57 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Sat, 16 May 2020 15:51:57 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/linux%E4%B8%8Bmysql%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+        <description>前言 海洋兄一个写前端的同志都买了一个阿里云来学习数据库，苦于linux下安装报错，特把阿里云的账号密码发给我，让我来试着安装一下。我自己的阿</description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>mysql</category>
+            
+          
+        
+        
+          
+            
+              <category>liunx</category>
+            
+          
+            
+              <category>数据库</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>java基础之__枚举</title>
         <link>https://lu-dashuai.github.io/posts/blogs/java%E5%9F%BA%E7%A1%80__%E6%9E%9A%E4%B8%BE/</link>
         <pubDate>Fri, 15 May 2020 15:51:57 +0800</pubDate>
