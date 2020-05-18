@@ -126,7 +126,7 @@
         <author>aluruihua@163.com (Jack.lu)</author>
         <atom:modified>Fri, 15 May 2020 15:51:57 +0800</atom:modified>
         <guid>https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84/</guid>
-        <description>要求 了解稀疏数组的概念 如果一个数组(包括多维数组)中的大部分元素为0，或者为同一个值的数组时，可以使用稀疏数组来保存该数组，节约空间。 用代码</description>
+        <description>一句话总结 解决二维数组存储无效数据的痛点，节省存储空间。 要求 了解稀疏数组的概念 如果一个数组(包括多维数组)中的大部分元素为0，或者为同一个值</description>
         
         <dc:creator>Jack.lu</dc:creator>
         
