@@ -551,7 +551,7 @@
 
   
     
-    var permalink = JSON.parse("\"https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E9%98%9F%E5%88%97/\"");
+    var permalink = JSON.parse("\"https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
@@ -1213,12 +1213,12 @@
 <meta property="article:published_time" content="2020-05-18T11:46:45&#43;0800">
 
 <meta name="author" content="Jack.Lu">
-<meta property="article:author" content="https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E9%98%9F%E5%88%97/@Jack.Lu">
+<meta property="article:author" content="https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/@Jack.Lu">
 
 
 <meta property="og:site_name" content="Jack.lu">
 <meta property="og:title" content="【数据结构和算法__队列】">
-<meta property="og:url" content="https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E9%98%9F%E5%88%97/">
+<meta property="og:url" content="https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/">
 <meta property="og:type" content="article">
 <meta property="og:description" content=" ">
 
@@ -1231,7 +1231,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E9%98%9F%E5%88%97/">
+<link rel="canonical" href="https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1260,7 +1260,7 @@
     "headline": "【数据结构和算法__队列】",
     "datePublished": "2020-05-18T11:46:45+08:00",
     "dateModified": "2020-05-18T11:46:45+08:00",
-    "url" : "https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E9%98%9F%E5%88%97/",
+    "url" : "https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/",
     "description": " ",
     "keywords": ["数据结构","队列"],
     "author": {
@@ -1599,7 +1599,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;May 18, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;1&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;4&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">👻&nbsp;Jack.Lu</span>
   
@@ -1621,89 +1621,331 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <h2 id="一句话总结">一句话总结</h2>
-<ul>
-<li><code>Queue</code> 先进先出;</li>
-</ul>
-<h2 id="要求">要求</h2>
+      <h1 id="说明">说明</h1>
 <ol>
-<li>
-<p>了解队列的概念；</p>
-<ul>
-<li>队列是一个有序列表;</li>
-<li>遵循先入先出的原则;</li>
-</ul>
-</li>
-<li>
-<p>队列的分类；</p>
-<ul>
-<li>顺序队列：数组；</li>
-<li>循环队列：数组；</li>
-<li>链式队列：链表；</li>
-</ul>
-</li>
-<li>
-<p>队列的使用场景；</p>
-<ul>
-<li>先进先出,线程安全</li>
-</ul>
-</li>
-<li>
-<p>队列的基本方法；</p>
-</li>
+<li>创建一个队列的对象，属性为<strong>大小</strong>、<strong>头的指针位置</strong>、<strong>尾部指针位置</strong>、<strong>存放队列值得数组</strong>；</li>
+<li>头部和尾部得指针初始化都为-1；</li>
+<li>当头部指针值 == 尾部指针值 队列为null</li>
+<li>比如一个队列的size = 3，    0-&gt;1-&gt;2 这个队列的尾部指针为 2  现在是被填满的情况</li>
+<li>缺点：在普通顺序队列中，入队操作就是先将尾指针food后移一个单元(food++)，然后将元素值赋给food单元(data[food]=X)。出队时．则是头指针head后移(head++)。像这样进行了一定数量入队和出队操作后，可能会出现这样的情况：尾指针food已指到数组的最后一个元素．即food==MAXLEN-1．此时若再执行入队操作，便会出现队满“溢出”。然而，由于在此之前可能也执行了若干次出队操作．因而数组的前面部分可能还有很多闲置的元素空间，即这种溢出并非是真的没有可用的存储空间，故称这种溢出现象为“假溢出”。显然，必须要解决这一似溢出的问题，否则顺序队列就没有太多使用价值。</li>
+<li>缺点解释：长度为3，先进3个，此时food=2，队列满【正常】，再出一个，此时队列头部空余出来一个位置，但是要是再往里面加入得话，就加不进去了，因为food 已经等于 size-1=2了。</li>
 </ol>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>方法作用</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>add</td>
-<td>增加一个元索</td>
-<td>如果队列已满，则抛出一个IIIegaISlabEepeplian异常</td>
-</tr>
-<tr>
-<td>element</td>
-<td>返回队列头部的元素</td>
-<td>如果队列为空，则抛出一个NoSuchElementException异常</td>
-</tr>
-<tr>
-<td>offer</td>
-<td>添加一个元素并返回true</td>
-<td>如果队列已满，则返回false</td>
-</tr>
-<tr>
-<td>peek</td>
-<td>返回队列头部的元素</td>
-<td>如果队列为空，则返回null</td>
-</tr>
-<tr>
-<td>poll</td>
-<td>移除并返问队列头部的元素</td>
-<td>如果队列为空，则返回null</td>
-</tr>
-<tr>
-<td>put</td>
-<td>添加一个元素</td>
-<td>如果队列满，则阻塞</td>
-</tr>
-<tr>
-<td>remove</td>
-<td>移除并返回队列头部的元素</td>
-<td>如果队列为空，则抛出一个NoSuchElementException异常</td>
-</tr>
-<tr>
-<td>take</td>
-<td>移除并返回队列头部的元素</td>
-<td>如果队列为空，则阻塞</td>
-</tr>
-</tbody>
-</table>
+<h2 id="代码实现">代码实现</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">jack.queue</span><span class="o">;</span>
 
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+
+<span class="cm">/**
+</span><span class="cm"> * 一些声明信息
+</span><span class="cm"> * Description: 数组实现队列&lt;br/&gt;
+</span><span class="cm"> * date: 2020/5/18 1:16&lt;br/&gt;
+</span><span class="cm"> *
+</span><span class="cm"> * @author Jack.Lu&lt;br /&gt;
+</span><span class="cm"> * @since JDK 1.8
+</span><span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrQueueTest</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">ArrQueueList</span> <span class="n">arrQueueList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrQueueList</span><span class="o">(</span><span class="n">3</span><span class="o">);</span>
+        <span class="kt">boolean</span> <span class="n">bo</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">&#39; &#39;</span><span class="o">;</span><span class="c1">//接受命令
+</span><span class="c1"></span>        <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+        <span class="k">while</span> <span class="o">(!</span><span class="n">bo</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;输入[a]添加&#34;</span><span class="o">);</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;输入[g]取出&#34;</span><span class="o">);</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;输入[h]获取头部的值&#34;</span><span class="o">);</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;输入[s]打印队列&#34;</span><span class="o">);</span>
+            <span class="kt">char</span> <span class="n">next</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">next</span><span class="o">().</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">);</span>
+            <span class="o">;</span>
+            <span class="k">switch</span> <span class="o">(</span><span class="n">next</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">case</span> <span class="sc">&#39;a&#39;</span><span class="o">:</span>
+                    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;请输入一个数字：&#34;</span><span class="o">);</span>
+                    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                    <span class="n">arrQueueList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">case</span> <span class="sc">&#39;g&#39;</span><span class="o">:</span>
+                    <span class="k">try</span> <span class="o">{</span>
+                        <span class="kt">int</span> <span class="n">head</span> <span class="o">=</span> <span class="n">arrQueueList</span><span class="o">.</span><span class="na">getHead</span><span class="o">();</span>
+                        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;取出头：&#34;</span> <span class="o">+</span> <span class="n">head</span><span class="o">);</span>
+                    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="n">e</span><span class="o">.</span><span class="na">getMessage</span><span class="o">();</span>
+                    <span class="o">}</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">case</span> <span class="sc">&#39;h&#39;</span><span class="o">:</span>
+                    <span class="k">try</span> <span class="o">{</span>
+                        <span class="kt">int</span> <span class="n">head</span> <span class="o">=</span> <span class="n">arrQueueList</span><span class="o">.</span><span class="na">head</span><span class="o">();</span>
+                        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;头：&#34;</span> <span class="o">+</span> <span class="n">head</span><span class="o">);</span>
+                    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="n">e</span><span class="o">.</span><span class="na">getMessage</span><span class="o">();</span>
+                    <span class="o">}</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">case</span> <span class="sc">&#39;s&#39;</span><span class="o">:</span>
+                    <span class="n">arrQueueList</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">default</span><span class="o">:</span>
+                    <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+
+<span class="o">}</span>
+
+<span class="cm">/**
+</span><span class="cm"> * 创建一个队列
+</span><span class="cm"> */</span>
+<span class="kd">class</span> <span class="nc">ArrQueueList</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">size</span><span class="o">;</span><span class="c1">//数组的长度
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="kt">int</span> <span class="n">head</span><span class="o">;</span><span class="c1">//头的坐标
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="kt">int</span> <span class="n">food</span><span class="o">;</span><span class="c1">//尾的坐标
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">;</span><span class="c1">//数组存放数据
+</span><span class="c1"></span>
+    <span class="cm">/**
+</span><span class="cm">     * 构造函数初始化数组的大小，并且给head 和 food 都指向 头部
+</span><span class="cm">     *
+</span><span class="cm">     * @param size
+</span><span class="cm">     */</span>
+    <span class="kd">public</span> <span class="nf">ArrQueueList</span><span class="o">(</span><span class="kt">int</span> <span class="n">size</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">size</span> <span class="o">=</span> <span class="n">size</span><span class="o">;</span>
+        <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">size</span><span class="o">];</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span><span class="c1">// 初始化时 都为指针都指向第一个
+</span><span class="c1"></span>        <span class="n">food</span> <span class="o">=</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">//下面写增删改查 队列的方法，先写两个 1. 判断是否为null 2. 判断是否满了
+</span><span class="c1"></span>
+    <span class="cm">/**
+</span><span class="cm">     * 队列是否为null
+</span><span class="cm">     *
+</span><span class="cm">     * @return
+</span><span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isNull</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">head</span> <span class="o">==</span> <span class="n">food</span><span class="o">;</span><span class="c1">//当头部指针值 == 尾部指针值 队列为null
+</span><span class="c1"></span>    <span class="o">}</span>
+
+    <span class="cm">/**
+</span><span class="cm">     * 队列是否满
+</span><span class="cm">     *
+</span><span class="cm">     * @return
+</span><span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isFull</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">food</span> <span class="o">==</span> <span class="n">size</span> <span class="o">-</span> <span class="n">1</span><span class="o">;</span><span class="c1">//比如一个队列的size = 3，    0-&gt;1-&gt;2 这个队列的food = 2  现在是被填满的情况
+</span><span class="c1"></span>    <span class="o">}</span>
+
+    <span class="cm">/**
+</span><span class="cm">     * 给队列添加一个值
+</span><span class="cm">     *
+</span><span class="cm">     * @param val
+</span><span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="kt">int</span> <span class="n">val</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isFull</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;满了~~&#34;</span><span class="o">);</span>
+            <span class="k">return</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="n">food</span><span class="o">++;</span>
+        <span class="n">arr</span><span class="o">[</span><span class="n">food</span><span class="o">]</span> <span class="o">=</span> <span class="n">val</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**
+</span><span class="cm">     * 取出队列的头部
+</span><span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getHead</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isNull</span><span class="o">())</span> <span class="o">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="n">RuntimeException</span><span class="o">(</span><span class="s">&#34;空的!!!&#34;</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="n">head</span><span class="o">++;</span>
+        <span class="k">return</span> <span class="n">arr</span><span class="o">[</span><span class="n">head</span><span class="o">];</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**
+</span><span class="cm">     * 头部的值
+</span><span class="cm">     *
+</span><span class="cm">     * @return
+</span><span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">head</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isNull</span><span class="o">())</span> <span class="o">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="n">RuntimeException</span><span class="o">(</span><span class="s">&#34;空的！！！&#34;</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">arr</span><span class="o">[</span><span class="n">head</span> <span class="o">+</span> <span class="n">1</span><span class="o">];</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**
+</span><span class="cm">     * 打印队列
+</span><span class="cm">     */</span>
+    <span class="kt">void</span> <span class="nf">show</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isNull</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;空的！！！&#34;</span><span class="o">);</span>
+            <span class="k">return</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">&#34;arr[%d] = %d\n&#34;</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+
+<span class="o">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div>
     </article>
     
     <script>
@@ -1887,7 +2129,7 @@
     <ul class="related-ul">
         
         <li>
-          <a href="/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/" class="related__link">【数据结构和算法__队列】</a>
+          <a href="/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E9%98%9F%E5%88%97/" class="related__link">【数据结构和算法__队列】</a>
         </li>
         
         <li>
@@ -1905,21 +2147,14 @@
 <nav class="pagination-single">
   
     
-      <a href="https://lu-dashuai.github.io/posts/blogs/linux%E4%B8%8Bmysql%E7%9A%84%E5%AE%89%E8%A3%85/" class="pagination-single__left">
+      <a href="https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E9%98%9F%E5%88%97/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">linux下docker_mysql的安装并连接</div>      
+        <div class="pagination-single__left-title">【数据结构和算法__队列】</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">【数据结构和算法__队列】</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2277,8 +2512,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#一句话总结">一句话总结</a></li>
-    <li><a href="#要求">要求</a></li>
+    <li><a href="#代码实现">代码实现</a></li>
   </ul>
 </nav>
   </div>
