@@ -29,7 +29,7 @@
         <author>aluruihua@163.com (Jack.lu)</author>
         <atom:modified>Mon, 18 May 2020 11:46:45 +0800</atom:modified>
         <guid>https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/</guid>
-        <description>说明 创建一个队列的对象，属性为大小、头的指针位置、尾部指针位置、存放队列值得数组； 头部和尾部得指针初始化都为-1； 当头部指针值 == 尾部指针值 队</description>
+        <description>说明 创建一个队列的对象，属性为大小、头的指针位置、尾部指针位置、存放队列值得数组； 头部和尾部得指针初始化都为-1。因为size==0时，he</description>
         
         <dc:creator>Jack.Lu</dc:creator>
         
