@@ -1599,7 +1599,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;May 19, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;1&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">👻&nbsp;Jack.Lu</span>
   
@@ -1632,18 +1632,192 @@
 <img src="https://luruihua.oss-cn-beijing.aliyuncs.com/img/markdown/20200519133052.jpg" alt="" /></li>
 </ul>
 <ol start="2">
-<li>
-<p>环形队列的使用场景；</p>
-</li>
-<li>
-<p>环形队列解决的问题；</p>
-</li>
+<li>环形队列解决的问题；</li>
 </ol>
 <ul>
 <li>ArrayQueue存在一个问题，假设当尾部插入元素满了，头部又删掉了一些元素，这种情况下，就误认为空间满了，造成了假溢出，实际上头部删除了元素留出了空间。这时候环形队列就解决了这样的一个问题，环形队列的front指针始终指向当前队列的最后位置；end指针始终指向第一个元素的前一个位置为-1，存储元素的时候头部和尾部都可以相互移动，而不必造成假溢出现象，节省了内存空间。</li>
 </ul>
+<ol start="3">
+<li>环形队列的小算法</li>
+</ol>
+<ul>
+<li>初始化<code> food = head = 0</code>，size = 5 时 其实有效长度为4；</li>
+<li>判断队列空：<code>food = head</code>；</li>
+<li>判断队列满：<code>(food + 1) % size == head</code> &ndash;&gt; 给尾加一后对长度取模，就得到下一次的添加的位置&hellip;；</li>
+<li>头和尾的添加删除的下一个坐标：<code>(food + 1) % size</code> 考虑取模；</li>
+<li>队列的有效长度：<code>(food - head + size) % size</code> &mdash;&gt; 得到尾和头的差值 其实就是获得了长度，加长度考虑取模；</li>
+<li>展示当前队列 中 <code>i % size</code>；</li>
+</ul>
+<ol start="4">
+<li>
+<p>一般队列 和 环形队列比较</p>
+<p>(1. head头部指针<br />
+一般队列：head头部指针初始值为-1，从队列取数据时，该值依次递增，指向的元素即待取出的数据，而队列的头部数据所在的指针位置为head+1。当head=size-1时，队列最后一个数据取出，此时队列为空。<br />
+<br><br />
+环形队列：head头部指针初始值为0，指向的元素既是队列的头部数据也是待取出的数据。从队列取数据时，因逻辑上的闭环，指针可能再次回到前面的位置，不能单一递增处理，需通过取模来重新计算指针的值。<br />
+(2. food尾部指针<br />
+一般队列：food尾部指针初始值为-1，队列添加数据时，该值依次递增，当food=size-1时，队列满，无法再添加数据。<br />
+<br><br />
+环形队列：food尾部指针初始值为0，指向待添加数据的位置，队列添加数据时，因逻辑上的闭环，指针可能再次回到前面的位置，不能单一递增处理，会出现角标越界异常，需通过取模来重新计算指针的值。<br />
+(3. 队列空的判断逻辑<br />
+一般队列：food == head时，队列空。<br />
+<br><br />
+环形队列：food == head时，队列空。<br />
+(4. 队列满的判断逻辑<br />
+一般队列：food = size - 1时，队列满。<br />
+<br><br />
+环形队列：(food + 1) % size == head时，队列满。</p>
+</li>
+</ol>
 <h2 id="java代码">java代码</h2>
+<h3 id="初始化队列对象">初始化队列对象</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">LinkedQueue</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">size</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">head</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">food</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">;</span>
 
+    <span class="kd">public</span> <span class="nf">LinkedQueue</span><span class="o">(</span><span class="kt">int</span> <span class="n">size</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">size</span> <span class="o">=</span> <span class="n">size</span><span class="o">;</span>
+        <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">size</span><span class="o">];</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">head</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">food</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="判断是否为null">判断是否为null</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isNull</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">food</span> <span class="o">==</span> <span class="k">this</span><span class="o">.</span><span class="na">head</span><span class="o">;</span>
+<span class="o">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="判断是否满">判断是否满</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isFull</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="o">(</span><span class="n">food</span> <span class="o">+</span> <span class="n">1</span><span class="o">)</span> <span class="o">%</span> <span class="n">size</span> <span class="o">==</span> <span class="n">head</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="添加一个数字到队列">添加一个数字到队列</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="kt">int</span> <span class="n">val</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">isFull</span><span class="o">())</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;队列已满~~&#34;</span><span class="o">);</span>
+        <span class="k">return</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="n">arr</span><span class="o">[</span><span class="n">food</span><span class="o">]</span> <span class="o">=</span> <span class="n">val</span><span class="o">;</span><span class="c1">//给值
+</span><span class="c1"></span>    <span class="n">food</span> <span class="o">=</span> <span class="o">(</span><span class="n">food</span> <span class="o">+</span> <span class="n">1</span> <span class="o">)</span> <span class="o">%</span> <span class="n">size</span><span class="o">;</span> <span class="c1">//food向后移一位
+</span><span class="c1"></span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;添加成功,food为：&#34;</span> <span class="o">+</span> <span class="n">food</span><span class="o">);</span>
+<span class="o">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="删除一个队列">删除一个队列</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">del</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">isNull</span><span class="o">())</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;队列为null~~~&#34;</span><span class="o">);</span>
+        <span class="k">return</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">head</span><span class="o">];</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">head</span> <span class="o">=</span> <span class="o">(</span> <span class="n">head</span> <span class="o">+</span> <span class="n">1</span><span class="o">)</span> <span class="o">%</span> <span class="n">size</span><span class="o">;</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;删除[&#34;</span><span class="o">+</span><span class="n">val</span><span class="o">+</span><span class="s">&#34;]成功,head为：&#34;</span> <span class="o">+</span> <span class="n">head</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="返回长度">返回长度</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">int</span> <span class="nf">getSize</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span>  <span class="o">(</span><span class="n">food</span> <span class="o">-</span> <span class="n">head</span> <span class="o">+</span> <span class="n">size</span><span class="o">)</span> <span class="o">%</span> <span class="n">size</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="展示当前队列">展示当前队列</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">show</span><span class="o">(){</span>
+    <span class="c1">//从head开始，表示循环有效长度次
+</span><span class="c1"></span>    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">head</span> <span class="o">+</span> <span class="n">getSize</span><span class="o">();</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="c1">//取余等于拿到真实的 数组内的指针
+</span><span class="c1"></span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;arr[&#34;</span><span class="o">+</span><span class="n">i</span><span class="o">%</span><span class="n">size</span><span class="o">+</span><span class="s">&#34;] = &#34;</span><span class="o">+</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">%</span><span class="n">size</span><span class="o">]);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </article>
     
     <script>
@@ -1857,6 +2031,13 @@
       </a>
     
     <div class="grow"></div>
+    
+      <a href="https://lu-dashuai.github.io/posts/blogs/%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91-frida%E5%AD%A6%E4%B9%A0/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">【安卓逆向 Frida学习】</div>
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        </div>
+      </a>
     
   
 </nav>
@@ -2216,7 +2397,17 @@ document.addEventListener('DOMContentLoaded', function () {
   <ul>
     <li><a href="#一句话总结">一句话总结</a></li>
     <li><a href="#要求">要求</a></li>
-    <li><a href="#java代码">java代码</a></li>
+    <li><a href="#java代码">java代码</a>
+      <ul>
+        <li><a href="#初始化队列对象">初始化队列对象</a></li>
+        <li><a href="#判断是否为null">判断是否为null</a></li>
+        <li><a href="#判断是否满">判断是否满</a></li>
+        <li><a href="#添加一个数字到队列">添加一个数字到队列</a></li>
+        <li><a href="#删除一个队列">删除一个队列</a></li>
+        <li><a href="#返回长度">返回长度</a></li>
+        <li><a href="#展示当前队列">展示当前队列</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
