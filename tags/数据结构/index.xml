@@ -29,7 +29,7 @@
         <author>aluruihua@163.com (Jack.lu)</author>
         <atom:modified>Fri, 29 May 2020 16:13:24 +0800</atom:modified>
         <guid>https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95_%E5%8D%95%E9%93%BE%E8%A1%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</guid>
-        <description></description>
+        <description>一句话解释链表 链表是以节点的方式来存储，一个内存地址划分为两部分：data域用来存放数据，next作为指向下一个内存地址的标识； 有序列表，是</description>
         
         <dc:creator>Jack.Lu</dc:creator>
         
