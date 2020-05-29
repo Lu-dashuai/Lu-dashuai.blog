@@ -14,17 +14,52 @@
   
   <url>
     <loc>https://lu-dashuai.github.io/categories/</loc>
-    <lastmod>2020-05-27T18:57:33+08:00</lastmod>
+    <lastmod>2020-05-29T16:13:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://lu-dashuai.github.io/posts/</loc>
-    <lastmod>2020-05-27T18:57:33+08:00</lastmod>
+    <lastmod>2020-05-29T16:13:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://lu-dashuai.github.io/tags/</loc>
-    <lastmod>2020-05-27T18:57:33+08:00</lastmod>
+    <lastmod>2020-05-29T16:13:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95_%E5%8D%95%E9%93%BE%E8%A1%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</loc>
+    <lastmod>2020-05-29T16:13:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/tags/%E5%8D%95%E9%93%BE%E8%A1%A8/</loc>
+    <lastmod>2020-05-29T16:13:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2020-05-29T16:13:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2020-05-29T16:13:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/tags/gradle/</loc>
+    <lastmod>2020-05-28T16:50:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/posts/blogs/gradle-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2020-05-28T16:50:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lu-dashuai.github.io/categories/%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2020-05-28T16:50:09+08:00</lastmod>
   </url>
   
   <url>
@@ -44,16 +79,6 @@
   
   <url>
     <loc>https://lu-dashuai.github.io/posts/blogs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95__%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E7%8E%AF%E5%BD%A2%E9%98%9F%E5%88%97/</loc>
-    <lastmod>2020-05-19T12:27:55+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lu-dashuai.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2020-05-19T12:27:55+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lu-dashuai.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-05-19T12:27:55+08:00</lastmod>
   </url>
   
@@ -143,11 +168,6 @@
   </url>
   
   <url>
-    <loc>https://lu-dashuai.github.io/categories/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2020-04-16T15:24:43+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lu-dashuai.github.io/publication/article/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
@@ -229,11 +249,6 @@
   
   <url>
     <loc>https://lu-dashuai.github.io/tags/git/</loc>
-    <lastmod>2018-01-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lu-dashuai.github.io/tags/gradle/</loc>
     <lastmod>2018-01-16T12:00:06+09:00</lastmod>
   </url>
   

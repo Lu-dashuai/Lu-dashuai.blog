@@ -14,13 +14,43 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 16 Jan 2018 12:00:06 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 16:50:09 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/tags/gradle/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>【Gradle 环境配置及使用】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/gradle-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+        <pubDate>Thu, 28 May 2020 16:50:09 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Thu, 28 May 2020 16:50:09 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/gradle-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
+        <description>gradle 基本介绍 比起maven的好处 gradle 环境搭建 配环境变量 idea中使用gradle gradle的目录介绍 grovvy语言语法 不用括号，不用分号； 定</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Gradle</category>
+            
+          
+        
+        
+          
+            
+              <category>项目管理/构建工具</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>需要不断学习的技术栈</title>
