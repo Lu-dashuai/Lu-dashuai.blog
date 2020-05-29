@@ -1599,7 +1599,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;May 28, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;1&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">👻&nbsp;Jack.Lu</span>
   
@@ -1620,22 +1620,247 @@
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
       <h2 id="gradle-基本介绍">gradle 基本介绍</h2>
+<ul>
+<li>项目构建工具，没有必要过度吹捧；</li>
+</ul>
 <h3 id="比起maven的好处">比起maven的好处</h3>
+<ol>
+<li>maven现在已经是行业标准，Gradle是后起之秀；</li>
+<li>Gradle抛弃了Maven的基于XML的繁琐配置，领域特定语言Groovy的配置，大大简化了构建代码的行数；</li>
+<li>各种在Maven中难以下手的事情，在Gradle就是小菜一碟，比如修改现有的构建生命周期，几行配置就完成了，同样的事情，在Maven中你必须编写一个插件；</li>
+</ol>
 <h2 id="gradle-环境搭建">gradle 环境搭建</h2>
+<h3 id="下载">下载</h3>
+<p><a href="https://services.gradle.org/distributions/gradle-5.6.4-all.zip">下载地址</a></p>
 <h3 id="配环境变量">配环境变量</h3>
-<h2 id="idea中使用gradle">idea中使用gradle</h2>
+<ol>
+<li><code>Path = %GRADLE_HOME%\bin;</code></li>
+<li><code>GRADLE_USER_HOME = maven本地仓库的位置</code></li>
+</ol>
+<h3 id="配置gradle仓库源使用maven本地仓库">配置Gradle仓库源（使用maven本地仓库）</h3>
+<ul>
+<li>🍎首先maven仓库的地址得配好</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span class="nt">&lt;settings</span> <span class="na">xmlns=</span><span class="s">&#34;http://maven.apache.org/SETTINGS/1.0.0&#34;</span>
+          <span class="na">xmlns:xsi=</span><span class="s">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+          <span class="na">xsi:schemaLocation=</span><span class="s">&#34;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&#34;</span><span class="nt">&gt;</span>
+          <span class="c">&lt;!-- 本地仓库 --&gt;</span>
+<span class="nt">&lt;localRepository&gt;</span>D:\maven-repository<span class="nt">&lt;/localRepository&gt;</span>
+  <span class="nt">&lt;pluginGroups&gt;</span>
+  <span class="nt">&lt;/pluginGroups&gt;</span>
+  <span class="nt">&lt;proxies&gt;</span>
+  <span class="nt">&lt;/proxies&gt;</span>
+  <span class="nt">&lt;servers&gt;</span>
+  <span class="nt">&lt;/servers&gt;</span>
+  <span class="nt">&lt;mirrors&gt;</span>
+  <span class="c">&lt;!-- 阿里云镜像 --&gt;</span>
+  <span class="nt">&lt;mirror&gt;</span> 
+  	<span class="nt">&lt;id&gt;</span>nexus-aliyun<span class="nt">&lt;/id&gt;</span> 
+  	<span class="nt">&lt;mirrorOf&gt;</span>*<span class="nt">&lt;/mirrorOf&gt;</span> 
+  	<span class="nt">&lt;name&gt;</span>Nexus aliyun<span class="nt">&lt;/name&gt;</span> 
+  	<span class="nt">&lt;url&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span class="nt">&lt;/url&gt;</span> 
+  <span class="nt">&lt;/mirror&gt;</span>
+  <span class="nt">&lt;/mirrors&gt;</span>
+  <span class="nt">&lt;profiles&gt;</span>
+  <span class="nt">&lt;/profiles&gt;</span>
+<span class="nt">&lt;/settings&gt;</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>🍌gradle</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-groovy" data-lang="groovy"><span class="n">allprojects</span> <span class="o">{</span>
+    <span class="n">repositories</span> <span class="o">{</span>
+        <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;file:///D:/maven_repository&#39;</span><span class="o">}</span><span class="c1">//这里填写maven本地仓库的位置
+</span><span class="c1"></span>        <span class="n">mavenLocal</span><span class="o">()</span>
+        <span class="n">maven</span> <span class="o">{</span> <span class="n">name</span> <span class="s2">&#34;Alibaba&#34;</span> <span class="o">;</span> <span class="n">url</span> <span class="s2">&#34;https://maven.aliyun.com/repository/public&#34;</span> <span class="o">}</span>
+        <span class="n">maven</span> <span class="o">{</span> <span class="n">name</span> <span class="s2">&#34;Bstek&#34;</span> <span class="o">;</span> <span class="n">url</span> <span class="s2">&#34;http://nexus.bsdn.org/content/groups/public/&#34;</span> <span class="o">}</span>
+        <span class="n">mavenCentral</span><span class="o">()</span>
+    <span class="o">}</span>
+
+    <span class="n">buildscript</span> <span class="o">{</span> 
+        <span class="n">repositories</span> <span class="o">{</span> 
+            <span class="n">maven</span> <span class="o">{</span> <span class="n">name</span> <span class="s2">&#34;Alibaba&#34;</span> <span class="o">;</span> <span class="n">url</span> <span class="s1">&#39;https://maven.aliyun.com/repository/public&#39;</span> <span class="o">}</span>
+            <span class="n">maven</span> <span class="o">{</span> <span class="n">name</span> <span class="s2">&#34;Bstek&#34;</span> <span class="o">;</span> <span class="n">url</span> <span class="s1">&#39;http://nexus.bsdn.org/content/groups/public/&#39;</span> <span class="o">}</span>
+            <span class="n">maven</span> <span class="o">{</span> <span class="n">name</span> <span class="s2">&#34;M2&#34;</span> <span class="o">;</span> <span class="n">url</span> <span class="s1">&#39;https://plugins.gradle.org/m2/&#39;</span> <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>🐷repositories 中写的是获取 jar 包的顺序。先是本地的 Maven 仓库路径；接着的 mavenLocal() 是获取 Maven 本地仓库的路径，应该是和第一条一样，但是不冲突；第三条和第四条是从国内和国外的网络上仓库获取；最后的 mavenCentral() 是从Apache提供的中央仓库获取 jar 包。</li>
+</ul>
+<h2 id="gradle常见命令">gradle常见命令</h2>
+<ol>
+<li>检查依赖并编译打包：<code>gradle build </code>;</li>
+<li>编译跳过测试:<code>gradle build -x test</code>;</li>
+<li>编译打包tgz包，跳过测试类:<code>gradle releaseTarGz -x signArchives -x test </code>;</li>
+<li>清理:<code>gradle clean</code>;</li>
+<li>编译并打Debug包:<code>gradle assembleDebug</code>;</li>
+<li>编译并打Release的包（正式发布）：<code>gradle assembleRelease</code>;</li>
+</ol>
 <h2 id="gradle的目录介绍">gradle的目录介绍</h2>
-<h2 id="grovvy语言语法">grovvy语言语法</h2>
+<p><img src="https://luruihua.oss-cn-beijing.aliyuncs.com/img/markdown/20200529184707.webp" alt="" /><br />
+👍gradlew: gradlew环境的脚本，我们执行就会完成环境一个搭建<br />
+👍build: gradlew 项目构建之后自动生成的一个目录<br />
+👍gradle: 里面有个子目录 wrapper项目成员没有安装gradle就会自动安装gradle，好处就是统一gradle的版本<br />
+👍src: 项目源码，包含程序源码和测试源码<br />
+👍.idea: 存放项目的配置信息。这个文件夹是自动生成，版本控制信息等，包括历史记录<br />
+👍settings.gradle: 针对module的全局配置，它的作用域所包含的所有module是通过settings.gradle来配置<br />
+🍎build.gradle: 这个文件是整个项目的构建脚本，脚本中内容是以Groovy语言来书写的。<br />
+范例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-groovy" data-lang="groovy"><span class="n">buildscript</span> <span class="o">{</span><span class="c1">//运行首先执行这段代码
+</span><span class="c1"></span>    <span class="n">ext</span> <span class="o">{</span><span class="c1">//用于定义动态属性
+</span><span class="c1"></span>        <span class="c1">//sringBootVersion 变量的定义
+</span><span class="c1"></span>        <span class="n">springBootVersion</span> <span class="o">=</span> <span class="s1">&#39;2.0.0.RELEASE&#39;</span>
+    <span class="o">}</span>
+    <span class="n">repositories</span> <span class="o">{</span>
+        <span class="c1">//mavenCentral() //官方的中央仓库
+</span><span class="c1"></span>        <span class="n">maven</span> <span class="o">{</span>  <span class="c1">//自定义中央仓库 下面是引用阿里的maven中央仓库
+</span><span class="c1"></span>            <span class="n">url</span> <span class="s1">&#39;http://maven.aliyun.com/nexus/content/groups/public&#39;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">dependencies</span> <span class="o">{</span><span class="c1">//依赖，下面是依赖springboot的一个插件
+</span><span class="c1"></span>        <span class="c1">//${springBootVersion} 就是引用上面动态属性的变量
+</span><span class="c1"></span>        <span class="n">classpath</span><span class="o">(</span><span class="s2">&#34;org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}&#34;</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="c1">//使用了的插件
+</span><span class="c1"></span><span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">&#39;java&#39;</span>
+<span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">&#39;eclipse&#39;</span>
+<span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">&#39;org.springframework.boot&#39;</span>
+<span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">&#39;io.spring.dependency-management&#39;</span>
+
+<span class="n">group</span> <span class="o">=</span> <span class="s1">&#39;com.youngman&#39;</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;0.0.1-SNAPSHOT&#39;</span><span class="c1">//项目的版本号,用户可以自定义
+</span><span class="c1"></span><span class="n">sourceCompatibility</span> <span class="o">=</span> <span class="mf">1.8</span><span class="c1">//JDK的版本
+</span><span class="c1"></span>
+<span class="n">repositories</span> <span class="o">{</span>
+    <span class="c1">//mavenCentral()
+</span><span class="c1"></span>    <span class="n">maven</span> <span class="o">{</span>
+        <span class="n">url</span> <span class="s1">&#39;http://maven.aliyun.com/nexus/content/groups/public&#39;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="c1">//依赖
+</span><span class="c1"></span><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">compile</span><span class="o">(</span><span class="s1">&#39;org.springframework.boot:spring-boot-starter-data-jpa&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="s1">&#39;org.springframework.boot:spring-boot-starter-security&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="s1">&#39;org.springframework.boot:spring-boot-starter-web&#39;</span><span class="o">)</span>
+    <span class="n">testCompile</span><span class="o">(</span><span class="s1">&#39;org.springframework.boot:spring-boot-starter-test&#39;</span><span class="o">)</span>
+    <span class="n">testCompile</span><span class="o">(</span><span class="s1">&#39;org.springframework.security:spring-security-test&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="grovvy语法">grovvy语法</h2>
+<p><img src="https://www.cnblogs.com/yufecheng/p/11302777.html" alt="参考博客" /></p>
 <ol>
 <li>不用括号，不用分号；</li>
 <li>定义变量用def；</li>
 <li>闭包</li>
 </ol>
-<h2 id="gradle-如何-使用maven仓库">gradle 如何 使用maven仓库</h2>
-<ul>
-<li>将maven的仓库地址配置为环境变量</li>
-</ul>
-<h2 id="gradle-的常用命令">gradle 的常用命令</h2>
 
     </article>
     
@@ -2209,14 +2434,14 @@ document.addEventListener('DOMContentLoaded', function () {
     </li>
     <li><a href="#gradle-环境搭建">gradle 环境搭建</a>
       <ul>
+        <li><a href="#下载">下载</a></li>
         <li><a href="#配环境变量">配环境变量</a></li>
+        <li><a href="#配置gradle仓库源使用maven本地仓库">配置Gradle仓库源（使用maven本地仓库）</a></li>
       </ul>
     </li>
-    <li><a href="#idea中使用gradle">idea中使用gradle</a></li>
+    <li><a href="#gradle常见命令">gradle常见命令</a></li>
     <li><a href="#gradle的目录介绍">gradle的目录介绍</a></li>
-    <li><a href="#grovvy语言语法">grovvy语言语法</a></li>
-    <li><a href="#gradle-如何-使用maven仓库">gradle 如何 使用maven仓库</a></li>
-    <li><a href="#gradle-的常用命令">gradle 的常用命令</a></li>
+    <li><a href="#grovvy语法">grovvy语法</a></li>
   </ul>
 </nav>
   </div>

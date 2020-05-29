@@ -1623,15 +1623,15 @@
       
       <h2 id="一句话解释链表">一句话解释链表</h2>
 <ul>
-<li>链表是以节点的方式来存储，一个内存地址划分为两部分：data域用来存放数据，next作为指向下一个内存地址的标识；</li>
+<li>链表是以节点的方式来存储，一个内存地址划分为两部分：<code>data</code>域用来存放数据，<code>next</code>作为指向下一个内存地址的标识；</li>
 <li>有序列表，是链式存储，再内存上不一定连续；</li>
 </ul>
 <h2 id="实现链表的注意事项">实现链表的注意事项</h2>
 <ol>
 <li>每个节点是一个对象，一个链表是一个对象；</li>
 <li>需要使用临时的节点变量来遍历，更改当前的临时节点的指向，来完成遍历；</li>
-<li>使用while循环，注意每次结束都要temp = temp.next；</li>
-<li>打印节点值时注意，head 为 null，需要从head.next开始遍历；</li>
+<li>使用while循环，注意每次结束都要<code>temp = temp.next</code>；</li>
+<li>打印节点值时注意，<code>head</code> 为 <code>null</code>，需要从<code>head.next</code>开始遍历；</li>
 </ol>
 <h2 id="java代码实现增删改查">Java代码实现增删改查</h2>
 <h3 id="声明节点对象">声明节点对象</h3>
