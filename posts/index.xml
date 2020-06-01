@@ -63,7 +63,7 @@
         <author>aluruihua@163.com (Jack.lu)</author>
         <atom:modified>Thu, 28 May 2020 16:50:09 +0800</atom:modified>
         <guid>https://lu-dashuai.github.io/posts/blogs/gradle-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
-        <description>gradle 基本介绍 项目构建工具，没有必要过度吹捧； 依赖哪里找 比起maven的好处 maven现在已经是行业标准，Gradle是后起之秀； Gradle抛</description>
+        <description>gradle 基本介绍 项目构建工具，没有必要过度吹捧； 依赖哪里找 mvn仓库 比起maven的好处 maven现在已经是行业标准，Gradle是后起之秀； Gr</description>
         
         <dc:creator>Jack.Lu</dc:creator>
         
