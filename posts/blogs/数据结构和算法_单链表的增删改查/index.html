@@ -1599,7 +1599,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;May 29, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;4&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">👻&nbsp;Jack.Lu</span>
   
@@ -1932,6 +1932,12 @@
 </span><span class="lnt">25
 </span><span class="lnt">26
 </span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SingleLinkedListTest</span> <span class="o">{</span>
@@ -1959,8 +1965,89 @@
         <span class="c1">//删除未存在的id
 </span><span class="c1"></span>        <span class="n">singleLinkedList</span><span class="o">.</span><span class="na">del</span><span class="o">(</span><span class="n">11</span><span class="o">);</span>
         <span class="n">singleLinkedList</span><span class="o">.</span><span class="na">list</span><span class="o">();</span>
+
+        <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">singleLinkedList</span><span class="o">.</span><span class="na">getLength</span><span class="o">(</span><span class="n">singleLinkedList</span><span class="o">.</span><span class="na">getHead</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;length=&#34;</span><span class="o">+</span><span class="n">length</span><span class="o">);</span>
+
+        <span class="n">Node</span> <span class="n">lastNode</span> <span class="o">=</span> <span class="n">singleLinkedList</span><span class="o">.</span><span class="na">findLastNode</span><span class="o">(</span><span class="n">singleLinkedList</span><span class="o">.</span><span class="na">getHead</span><span class="o">(),</span> <span class="n">3</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;k--&gt;&#34;</span><span class="o">+</span><span class="n">lastNode</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="拓展">拓展</h2>
+<h3 id="求单链表的有效数据个数">求单链表的有效数据个数</h3>
+<ul>
+<li>思路：将头节点传入，用.next循环，退出循环条件是 当前变量为null</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="cm">/**
+</span><span class="cm">     * 求单链表的有效数据个数
+</span><span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getLength</span><span class="o">(</span><span class="n">Node</span> <span class="n">head</span><span class="o">){</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">head</span><span class="o">.</span><span class="na">next</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="n">0</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+        <span class="n">Node</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+        <span class="k">while</span> <span class="o">(</span><span class="n">temp</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">length</span><span class="o">++;</span>
+            <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">length</span><span class="o">;</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="查找单链表的倒数第k个节点">查找单链表的<code>倒数</code>第k个节点</h3>
+<ul>
+<li>思路：传入头节点和k，先找length，遍历的次数 = length - size （临时变量移动的次数）</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="cm">/**
+</span><span class="cm">     * 查找单链表的倒数第k个节点
+</span><span class="cm">     */</span>
+    <span class="kd">public</span> <span class="n">Node</span> <span class="nf">findLastNode</span><span class="o">(</span><span class="n">Node</span> <span class="n">head</span><span class="o">,</span><span class="kt">int</span> <span class="n">k</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">head</span><span class="o">.</span><span class="na">next</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span> <span class="c1">//第一个节点为null
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">getLength</span><span class="o">(</span><span class="n">head</span><span class="o">);</span><span class="c1">//获取长度
+</span><span class="c1"></span>        <span class="k">if</span> <span class="o">(</span><span class="n">k</span> <span class="o">&lt;=</span> <span class="n">0</span> <span class="o">||</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="n">length</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span> <span class="c1">//排除不合法情况
+</span><span class="c1"></span>
+        <span class="n">Node</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="o">-</span><span class="n">k</span> <span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span> <span class="c1">// length = 4 , list = [0,1,2,3], k=2 ,temp=0 ,移动2次=length-k=4-2
+</span><span class="c1"></span>            <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">temp</span><span class="o">;</span>
+    <span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -2545,6 +2632,12 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#声明节点对象">声明节点对象</a></li>
         <li><a href="#增删改查方法">增删改查方法</a></li>
         <li><a href="#main-test">main-&gt;test</a></li>
+      </ul>
+    </li>
+    <li><a href="#拓展">拓展</a>
+      <ul>
+        <li><a href="#求单链表的有效数据个数">求单链表的有效数据个数</a></li>
+        <li><a href="#查找单链表的倒数第k个节点">查找单链表的<code>倒数</code>第k个节点</a></li>
       </ul>
     </li>
   </ul>
