@@ -14,13 +14,43 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 10 Jun 2020 16:43:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2020 13:09:15 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>&#39;Vbs脚本 定时重启&#39;</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/vbs%E8%84%9A%E6%9C%AC-%E5%AE%9A%E6%97%B6%E9%87%8D%E5%90%AF/</link>
+        <pubDate>Sat, 04 Jul 2020 13:09:15 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Sat, 04 Jul 2020 13:09:15 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/vbs%E8%84%9A%E6%9C%AC-%E5%AE%9A%E6%97%B6%E9%87%8D%E5%90%AF/</guid>
+        <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 &amp;#39;备注： &amp;#39;防止出现错误 On Error Resume Next &amp;#39;vbs代码开始--</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Shell脚本</category>
+            
+          
+        
+        
+          
+            
+              <category>操作系统</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>AAA</title>
