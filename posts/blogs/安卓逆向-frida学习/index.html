@@ -1206,7 +1206,7 @@
 <meta name="description" content=" " />
 
 
-<meta name="keywords" content="安卓逆向">
+<meta name="keywords" content="frida">
 
 <meta name="created" content="2020-05-27T18:57:33&#43;0800">
 <meta name="modified" content="2020-05-27T18:57:33&#43;0800">
@@ -1262,7 +1262,7 @@
     "dateModified": "2020-05-27T18:57:33+08:00",
     "url" : "https://lu-dashuai.github.io/posts/blogs/%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91-frida%E5%AD%A6%E4%B9%A0/",
     "description": " ",
-    "keywords": ["安卓逆向"],
+    "keywords": ["frida"],
     "author": {
       "@type": "Person",
       "name": "Jack.Lu"
@@ -1599,7 +1599,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;May 27, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;1&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">👻&nbsp;Jack.Lu</span>
   
@@ -1613,16 +1613,169 @@
   🏷️
   
 
-  <li><a href="https://lu-dashuai.github.io/tags/%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91/" class="single__tag" title="安卓逆向">#安卓逆向</a></li>
+  <li><a href="https://lu-dashuai.github.io/tags/frida/" class="single__tag" title="frida">#frida</a></li>
 
 </ul>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <ul>
-<li>明天开始写</li>
+      <h2 id="环境搭建">环境搭建</h2>
+<h3 id="一软件准备见附件">一、软件准备（见附件）</h3>
+<ul>
+<li>Anaconda3-2018.12-Windows-x86_64.exe（安装完成之后默认配置好python3.7的环境变量，及一些常用类库，可以不用单独安装python，如果之前有，会替代原版本）；<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/?C=M&amp;O=A">下载地址</a></li>
+<li>frida-server-12.8.13-android-x86（frida-server之后需要push到模拟器中）<a href="https://github.com/frida/frida/releases">下载地址</a></li>
+<li>需要hook的apk；</li>
+<li>夜神模拟器，Android-5（frida+python+安卓5是测试后环境）；</li>
+<li>vscode安装</li>
+<li>sdk（支持adb命令就行，不要求版本）</li>
 </ul>
+<h3 id="二安装anaconda3">二、安装Anaconda3：</h3>
+<p><img src="https://luruihua.oss-cn-beijing.aliyuncs.com/img/markdown/20200710161334.png" alt="" /></p>
+<ul>
+<li>安装时记得勾选，其他直接next安装结束。</li>
+<li>cmd输入python显示<br />
+<img src="https://luruihua.oss-cn-beijing.aliyuncs.com/img/markdown/20200710161412.png" alt="" /></li>
+</ul>
+<p>三、pip下载frida及frida-tools：</p>
+<p>安装frida，需要安装两部分，分别是：frida、frida-tools</p>
+<ol>
+<li>cmd输入命令安装frida（速度较慢可能需要一个多小时）：</li>
+</ol>
+<pre><code>
+pip install frida==12.8.13
 
+</code></pre><p><a href="https://blog.csdn.net/Just_youHG/article/details/102744928">参考pip国内镜像的使用</a>，安装frida只用5秒钟。</p>
+<ol start="2">
+<li>cmd安装frida-tools:</li>
+</ol>
+<pre><code>
+pip install frida-tools==7.0.2
+
+</code></pre><p>注意：</p>
+<ul>
+<li>因为可能电脑之前安装过比python3.7还要低的版本，本次安装anaconda相当于升级了python，但是工具pip和setuptools没有被升级，所以导致安装frida失败找不到版本号。<br />
+如果pip显示找不到对应版本 应该先升级 pip：<br />
+报错：</li>
+</ul>
+<p>命令：</p>
+<pre><code>python -m pip install --upgrade pip
+</code></pre><p>升级setuptools：<br />
+命令：</p>
+<pre><code>pip install --upgrade setuptools
+</code></pre><p>升级完就可以继续安装frida和frida-tools，过程较慢，耐心等待。</p>
+<p>查看安装情况</p>
+<ol start="3">
+<li>输入cmd命令：</li>
+</ol>
+<pre><code>
+pip list|find &quot;frida&quot;
+
+</code></pre><p>四、夜深模拟器环境搭建</p>
+<ol>
+<li>新建夜深模拟器
+<ul>
+<li>安卓版本选择默认5.1.1</li>
+</ul>
+</li>
+<li>安装需要hook的apk</li>
+<li>电脑连接模拟器(对应自己的设备号)</li>
+</ol>
+<pre><code>
+adb connect 127.0.0.1:62001
+
+</code></pre><ol start="4">
+<li>模拟器存入frida-server（放入/data/local/tmp目录下，权限大）</li>
+</ol>
+<pre><code>
+adb -s 127.0.0.1:62001 push frida-server-12.8.13-android-x86 /data/local/tmp
+
+</code></pre><p>5.端口转发</p>
+<pre><code>
+adb -s 127.0.0.1:62001 forward tcp:27042 tcp:27042
+
+
+adb -s 127.0.0.1:62001 forward tcp:27043 tcp:27043
+
+</code></pre><p>6.修改权限并启动server<br />
+连续输入命令，服务启动，cmd命令不要关闭</p>
+<pre><code>
+adb -s 127.0.0.1:62001 shell
+
+su
+
+cd /data/local/tmp
+
+chmod 777 frida-server-12.8.1
+
+./frida-server-12.8.1
+
+</code></pre><h2 id="破解小tip">破解小tip</h2>
+<ol>
+<li>android killer 反编译失败解决<br />
+<a href="https://bitbucket.org/iBotPeaches/apktool/downloads/">https://bitbucket.org/iBotPeaches/apktool/downloads/</a></li>
+</ol>
+<p><a href="https://blog.csdn.net/LVXIANGAN/article/details/84622207">https://blog.csdn.net/LVXIANGAN/article/details/84622207</a></p>
+<ol start="2">
+<li>frida map===》str</li>
+</ol>
+<pre><code>var Map = Java.use('java.util.TreeMap');
+var args_map = Java.cast(arguments[0], Map);
+console.log(args_map.toString());
+</code></pre><ol start="3">
+<li>frida byte====&gt;str</li>
+</ol>
+<pre><code>
+var arr = Java.use(&quot;java.util.Arrays&quot;);
+
+console.log('param[1]:'+arr.toString(byt));
+
+</code></pre><ol start="4">
+<li>本地ssl证书连接问题<br />
+错误信息大致如下：PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target</li>
+</ol>
+<p>解决办法：参考https://blog.csdn.net/gabriel576282253/article/details/81531746</p>
+<ol start="5">
+<li>frida 查看当前运行包名</li>
+</ol>
+<pre><code>Frida-ps -U
+</code></pre><ol start="6">
+<li>frida hook 构造方法</li>
+</ol>
+<pre><code>var URL = Java.use('java.net.URL');
+    URL.$init.overload('java.lang.String').implementation=function(a){
+        console.log(a);
+        // return res;
+    }
+
+</code></pre><ol start="7">
+<li>frida hook 中创建java.lang.Object 数组</li>
+</ol>
+<pre><code>    var bs = Java.array('byte',bytes);
+    var third = Java.use('java.lang.Integer');
+    var int_sign = third.valueOf(&quot;2&quot;);
+    var obj = Java.array(&quot;java.lang.Object&quot;,[&quot;4069cb78-e02b-45f6-9f0a-b34ddccf389c&quot;,bs,int_sign]);
+
+</code></pre><ol start="8">
+<li>查看包名和active</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">adb shell
+
+dumpsys activity <span class="p">|</span> grep <span class="s2">&#34;mFoc&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="9">
+<li>frida 在vscode中有代码提示</li>
+</ol>
+<p>在目录下输入命令</p>
+<pre><code class="language-nodejs" data-lang="nodejs">npm i @types/frida-gum
+</code></pre>
     </article>
     
     <script>
@@ -2171,7 +2324,17 @@ document.addEventListener('DOMContentLoaded', function () {
     
   </div>
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#环境搭建">环境搭建</a>
+      <ul>
+        <li><a href="#一软件准备见附件">一、软件准备（见附件）</a></li>
+        <li><a href="#二安装anaconda3">二、安装Anaconda3：</a></li>
+      </ul>
+    </li>
+    <li><a href="#破解小tip">破解小tip</a></li>
+  </ul>
+</nav>
   </div>
 </section>
 

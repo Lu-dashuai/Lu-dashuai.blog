@@ -44,6 +44,48 @@
 
       
       <item>
+        <title>【Anyproxy抓包环境搭建】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/anyproxy%E6%8A%93%E5%8C%85%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Fri, 10 Jul 2020 16:01:04 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Fri, 10 Jul 2020 16:01:04 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/anyproxy%E6%8A%93%E5%8C%85%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+        <description>node安装教程 node环境安装 node服务搭建 node服务搭建 使用cnpm替代npm，防止被墙 [cnpm替代npm] (https://blog.csdn.net/wulove52/article/details/85761288) npm install -g cnpm --registry=https://registry.npm.taobao.org 无脑启动 anyproxy</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>HTTP/HTTPS协议</category>
+            
+          
+            
+              <category>Session/Cookie</category>
+            
+          
+            
+              <category>Node</category>
+            
+          
+            
+              <category>anyproxy</category>
+            
+          
+        
+        
+          
+            
+              <category>计算机网络</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>&#39;Vbs脚本 定时重启&#39;</title>
         <link>https://lu-dashuai.github.io/posts/blogs/vbs%E8%84%9A%E6%9C%AC-%E5%AE%9A%E6%97%B6%E9%87%8D%E5%90%AF/</link>
         <pubDate>Sat, 04 Jul 2020 13:09:15 +0800</pubDate>
@@ -69,24 +111,6 @@
               <category>操作系统</category>
             
           
-        
-        
-      </item>
-      
-      <item>
-        <title>AAA</title>
-        <link>https://lu-dashuai.github.io/posts/bysj/aaa/</link>
-        <pubDate>Wed, 10 Jun 2020 16:43:40 +0800</pubDate>
-        <author>aluruihua@163.com (Jack.lu)</author>
-        <atom:modified>Wed, 10 Jun 2020 16:43:40 +0800</atom:modified>
-        <guid>https://lu-dashuai.github.io/posts/bysj/aaa/</guid>
-        <description>感谢 在上海呆了一年多了，离开AAA也是一年多，依然记得记得自己在QY88班学习生活的日子，班主任的严肃认真，各科老师的认真指导，陪伴我度过了</description>
-        
-        <dc:creator>Jack.Lu</dc:creator>
-        
-        
-        
-        
         
         
       </item>
@@ -186,7 +210,7 @@
         <author>aluruihua@163.com (Jack.lu)</author>
         <atom:modified>Wed, 27 May 2020 18:57:33 +0800</atom:modified>
         <guid>https://lu-dashuai.github.io/posts/blogs/%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91-frida%E5%AD%A6%E4%B9%A0/</guid>
-        <description>明天开始写</description>
+        <description>环境搭建 一、软件准备（见附件） Anaconda3-2018.12-Windows-x86_64.exe（安装完成之后默认配置好python3</description>
         
         <dc:creator>Jack.Lu</dc:creator>
         
@@ -195,7 +219,7 @@
         
           
             
-              <category>安卓逆向</category>
+              <category>frida</category>
             
           
         
