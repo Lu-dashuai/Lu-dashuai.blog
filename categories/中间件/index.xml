@@ -14,13 +14,47 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 16 Jan 2018 12:00:06 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2020 16:46:07 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>【Nginx_webSocket反向代理配置】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/nginx_websocket%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Fri, 10 Jul 2020 16:46:07 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Fri, 10 Jul 2020 16:46:07 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/nginx_websocket%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</guid>
+        <description>@toc 1. nginx单纯做域名的代理时配置的解决办法 2. websocket中java类无法依赖注入的解决办法 3. nginx 域名映射对websocket中url</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Nginx</category>
+            
+          
+            
+              <category>webSocket</category>
+            
+          
+        
+        
+          
+            
+              <category>中间件</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>需要不断学习的技术栈</title>

@@ -14,13 +14,73 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 16 Jan 2018 12:00:06 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jul 2018 16:35:48 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/categories/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>【Github如何将已有的项目转移到组织仓库中去】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/github%E5%A6%82%E4%BD%95%E5%B0%86%E5%B7%B2%E6%9C%89%E7%9A%84%E9%A1%B9%E7%9B%AE%E8%BD%AC%E7%A7%BB%E5%88%B0%E7%BB%84%E7%BB%87%E4%BB%93%E5%BA%93%E4%B8%AD%E5%8E%BB/</link>
+        <pubDate>Tue, 10 Jul 2018 16:35:48 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Tue, 10 Jul 2018 16:35:48 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/github%E5%A6%82%E4%BD%95%E5%B0%86%E5%B7%B2%E6%9C%89%E7%9A%84%E9%A1%B9%E7%9B%AE%E8%BD%AC%E7%A7%BB%E5%88%B0%E7%BB%84%E7%BB%87%E4%BB%93%E5%BA%93%E4%B8%AD%E5%8E%BB/</guid>
+        <description>刚创建完一个组织后，想把之前的项目转移到组织的仓库中去咋搞呢？ 先进入到要转移的项目下如图： 看到图中的settings了吧？点他！！！！然后又</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Git</category>
+            
+          
+        
+        
+          
+            
+              <category>代码管理工具</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>【Idea中的github上传省略无用文件】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/idea%E4%B8%AD%E7%9A%84github%E4%B8%8A%E4%BC%A0%E7%9C%81%E7%95%A5%E6%97%A0%E7%94%A8%E6%96%87%E4%BB%B6/</link>
+        <pubDate>Tue, 10 Jul 2018 16:32:36 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Tue, 10 Jul 2018 16:32:36 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/idea%E4%B8%AD%E7%9A%84github%E4%B8%8A%E4%BC%A0%E7%9C%81%E7%95%A5%E6%97%A0%E7%94%A8%E6%96%87%E4%BB%B6/</guid>
+        <description>问题： 为什么要省略无用的文件？ 这些都是IDE 为了管理我们创建的工程而维护的文件，和开发的代码没有直接关系。最好不要在 Git 中进行追踪，也就是把它</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Git</category>
+            
+          
+        
+        
+          
+            
+              <category>代码管理工具</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>需要不断学习的技术栈</title>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>js on Jack.lu</title>
+    <link>https://lu-dashuai.github.io/tags/js/</link>
+    <description>Recent content in js on Jack.lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
+    <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 10 Dec 2018 16:30:35 +0800</lastBuildDate>
+    
+        <atom:link href="https://lu-dashuai.github.io/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>【使用js写短信验证的前台效果】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E4%BD%BF%E7%94%A8js%E5%86%99%E7%9F%AD%E4%BF%A1%E9%AA%8C%E8%AF%81%E7%9A%84%E5%89%8D%E5%8F%B0%E6%95%88%E6%9E%9C/</link>
+        <pubDate>Mon, 10 Dec 2018 16:30:35 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Mon, 10 Dec 2018 16:30:35 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E4%BD%BF%E7%94%A8js%E5%86%99%E7%9F%AD%E4%BF%A1%E9%AA%8C%E8%AF%81%E7%9A%84%E5%89%8D%E5%8F%B0%E6%95%88%E6%9E%9C/</guid>
+        <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 &amp;lt;script&amp;gt; var btn = document.getElementById(&amp;#34;btn&amp;#34;); var num =5; btn.onclick = function () { btn.disabled = true; var timer = setInterval(autoplay,1000); function autoplay() { num--; if (num&amp;gt;=0){ btn.innerHTML = num + &amp;#34;s后重发&amp;#34;; } else { btn</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>js</category>
+            
+          
+        
+        
+          
+            
+              <category>前端</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

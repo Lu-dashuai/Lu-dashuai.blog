@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>webSocket on Jack.lu</title>
+    <link>https://lu-dashuai.github.io/tags/websocket/</link>
+    <description>Recent content in webSocket on Jack.lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
+    <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 16:46:07 +0800</lastBuildDate>
+    
+        <atom:link href="https://lu-dashuai.github.io/tags/websocket/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>【Nginx_webSocket反向代理配置】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/nginx_websocket%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Fri, 10 Jul 2020 16:46:07 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Fri, 10 Jul 2020 16:46:07 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/nginx_websocket%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</guid>
+        <description>@toc 1. nginx单纯做域名的代理时配置的解决办法 2. websocket中java类无法依赖注入的解决办法 3. nginx 域名映射对websocket中url</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Nginx</category>
+            
+          
+            
+              <category>webSocket</category>
+            
+          
+        
+        
+          
+            
+              <category>中间件</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
