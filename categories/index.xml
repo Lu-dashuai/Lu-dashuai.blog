@@ -14,13 +14,31 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 10 Jul 2020 16:46:07 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2020 17:25:14 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>python</title>
+        <link>https://lu-dashuai.github.io/categories/python/</link>
+        <pubDate>Fri, 10 Jul 2020 17:25:14 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/categories/python/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>中间件</title>
