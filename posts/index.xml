@@ -65,7 +65,7 @@
       </item>
       
       <item>
-        <title>&#39;Vbs脚本 定时重启&#39;</title>
+        <title>【Vbs脚本 定时重启】</title>
         <link>https://lu-dashuai.github.io/posts/blogs/vbs%E8%84%9A%E6%9C%AC-%E5%AE%9A%E6%97%B6%E9%87%8D%E5%90%AF/</link>
         <pubDate>Sat, 04 Jul 2020 13:09:15 +0800</pubDate>
         <author>aluruihua@163.com (Jack.lu)</author>
@@ -448,6 +448,48 @@
           
             
               <category>项目</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>【SpringBoot Mybatis Shiro Redis整合】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/springboot-mybatis-shiro-redis%E6%95%B4%E5%90%88/</link>
+        <pubDate>Sat, 10 Nov 2018 16:24:18 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Sat, 10 Nov 2018 16:24:18 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/springboot-mybatis-shiro-redis%E6%95%B4%E5%90%88/</guid>
+        <description>github克隆源代码:https://github.com/Lu-dashuai/shiro.git 参考视频（B站）：https://ww</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>SpringBoot</category>
+            
+          
+            
+              <category>Mybatis</category>
+            
+          
+            
+              <category>Shiro</category>
+            
+          
+        
+        
+          
+            
+              <category>Java语言</category>
+            
+          
+            
+              <category>后端框架</category>
             
           
         
