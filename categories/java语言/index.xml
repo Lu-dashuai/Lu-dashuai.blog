@@ -14,13 +14,43 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 15 May 2020 15:51:57 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2020 10:31:19 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/categories/java%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>【工具类合集】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%90%88%E9%9B%86/</link>
+        <pubDate>Fri, 17 Jul 2020 10:31:19 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Fri, 17 Jul 2020 10:31:19 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%90%88%E9%9B%86/</guid>
+        <description>随机睡眠 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 //随机睡眠8-16s int random=(int)(Math.random()*8)+8; sleep(&amp;#34;页数[&amp;#34;+page+&amp;#34;],</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Java基础</category>
+            
+          
+        
+        
+          
+            
+              <category>Java语言</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>【java基础之__枚举】</title>

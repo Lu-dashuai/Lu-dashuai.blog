@@ -44,6 +44,36 @@
 
       
       <item>
+        <title>【工具类合集】</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%90%88%E9%9B%86/</link>
+        <pubDate>Fri, 17 Jul 2020 10:31:19 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Fri, 17 Jul 2020 10:31:19 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%90%88%E9%9B%86/</guid>
+        <description>随机睡眠 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 //随机睡眠8-16s int random=(int)(Math.random()*8)+8; sleep(&amp;#34;页数[&amp;#34;+page+&amp;#34;],</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Java基础</category>
+            
+          
+        
+        
+          
+            
+              <category>Java语言</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>Appium脚本 Python</title>
         <link>https://lu-dashuai.github.io/posts/blogs/appium%E8%84%9A%E6%9C%AC-python/</link>
         <pubDate>Fri, 10 Jul 2020 17:25:14 +0800</pubDate>
