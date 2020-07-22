@@ -14,13 +14,55 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 16 Jan 2018 12:00:06 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 10:44:24 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/tags/maven/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>若依 前后端不分离版学习</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E8%8B%A5%E4%BE%9D-%E5%89%8D%E5%90%8E%E7%AB%AF%E4%B8%8D%E5%88%86%E7%A6%BB%E7%89%88%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Mon, 20 Jul 2020 10:44:24 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Mon, 20 Jul 2020 10:44:24 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E8%8B%A5%E4%BE%9D-%E5%89%8D%E5%90%8E%E7%AB%AF%E4%B8%8D%E5%88%86%E7%A6%BB%E7%89%88%E5%AD%A6%E4%B9%A0/</guid>
+        <description>文档地址 代码地址 文档地址 在线演示</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Maven</category>
+            
+          
+            
+              <category>SpringBoot</category>
+            
+          
+            
+              <category>Mybatis</category>
+            
+          
+            
+              <category>Shiro</category>
+            
+          
+        
+        
+          
+            
+              <category>项目</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>需要不断学习的技术栈</title>
