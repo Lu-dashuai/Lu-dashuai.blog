@@ -14,13 +14,51 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 20 Jul 2020 10:44:24 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2020 14:36:25 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/tags/springboot/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Mybatis逆向工程</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/mybatis%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/</link>
+        <pubDate>Mon, 27 Jul 2020 14:36:25 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Mon, 27 Jul 2020 14:36:25 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/mybatis%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/</guid>
+        <description>&amp;ldquo;# mybatis&amp;rdquo; mybatis使用示例 github地址 地址 配置 因为mybatis-plus完全兼容 mybatis ，所以在测试mybatis的逆向工程时，无需引入my</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>SpringBoot</category>
+            
+          
+            
+              <category>Mybatis</category>
+            
+          
+        
+        
+          
+            
+              <category>Java语言</category>
+            
+          
+            
+              <category>后端框架</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>若依 前后端不分离版学习</title>
