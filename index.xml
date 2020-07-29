@@ -44,6 +44,36 @@
 
       
       <item>
+        <title>Mybatis Plus</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/mybatis-plus/</link>
+        <pubDate>Wed, 29 Jul 2020 16:51:55 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Wed, 29 Jul 2020 16:51:55 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/mybatis-plus/</guid>
+        <description>好文转载 （一）mybatis-plus详细介绍 （二）springboot+mybatis plus快速构建项目 （三）springboot + mybatis p</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Mybatis</category>
+            
+          
+        
+        
+          
+            
+              <category>后端框架</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>Mybatis逆向工程</title>
         <link>https://lu-dashuai.github.io/posts/blogs/mybatis%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/</link>
         <pubDate>Mon, 27 Jul 2020 14:36:25 +0800</pubDate>
