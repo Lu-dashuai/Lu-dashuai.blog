@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>ES on Jack.lu</title>
+    <link>https://lu-dashuai.github.io/tags/es/</link>
+    <description>Recent content in ES on Jack.lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
+    <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 01 Sep 2020 10:10:08 +0800</lastBuildDate>
+    
+        <atom:link href="https://lu-dashuai.github.io/tags/es/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Docker_ES集群搭建</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/docker_es%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Tue, 01 Sep 2020 10:10:08 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Tue, 01 Sep 2020 10:10:08 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/docker_es%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA/</guid>
+        <description>Docker 的安装与配置 docker的安装部署以及使用 docker可视化工具的安装与汉化 Portainer SecureCRT上传下载文件 es集群搭建 es集群搭建 启动 docker</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Docker</category>
+            
+          
+            
+              <category>ES</category>
+            
+          
+        
+        
+          
+            
+              <category>数据库/SQL</category>
+            
+          
+            
+              <category>Linux</category>
+            
+          
+            
+              <category>后端框架</category>
+            
+          
+            
+              <category>虚拟化容器</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1669,6 +1669,27 @@
 <pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">delete</span> <span class="k">from</span> <span class="n">table_bak</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
+</div><ol start="6">
+<li>。。。。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql">    <span class="k">select</span> <span class="s1">&#39;Red&#39;</span> <span class="k">as</span> <span class="n">sourcename</span><span class="p">,</span><span class="n">note_id</span> <span class="k">as</span> <span class="n">id</span><span class="p">,</span><span class="n">detail</span> <span class="k">as</span> <span class="n">content</span><span class="p">,[</span><span class="n">user_id</span><span class="p">]</span> <span class="k">as</span> <span class="n">userid</span><span class="p">,</span>
+<span class="p">[</span><span class="n">user_name</span><span class="p">]</span> <span class="k">as</span> <span class="n">username</span>
+<span class="k">into</span>  <span class="n">xiaohongshu_note_info_20200826</span>
+<span class="k">FROM</span> <span class="p">[</span><span class="n">DC_XiaoHongShu</span><span class="p">].[</span><span class="n">dbo</span><span class="p">].[</span><span class="n">xiaohongshu_note_info</span><span class="p">]</span>
+    <span class="k">where</span> <span class="n">note_time</span> <span class="k">between</span> <span class="s1">&#39;2019-08-01&#39;</span> <span class="k">and</span> <span class="s1">&#39;2020-08-01&#39;</span>
+    <span class="k">and</span> <span class="n">request_id</span> <span class="o">=</span><span class="s1">&#39;20200812&#39;</span>
+</code></pre></td></tr></table>
+</div>
 </div>
     </article>
     

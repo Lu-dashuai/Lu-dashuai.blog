@@ -22,6 +22,52 @@
 
       
       <item>
+        <title>Docker_ES集群搭建</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/docker_es%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Tue, 01 Sep 2020 10:10:08 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Tue, 01 Sep 2020 10:10:08 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/docker_es%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA/</guid>
+        <description>Docker 的安装与配置 docker的安装部署以及使用 docker可视化工具的安装与汉化 Portainer SecureCRT上传下载文件 es集群搭建 es集群搭建 启动 docker</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Docker</category>
+            
+          
+            
+              <category>ES</category>
+            
+          
+        
+        
+          
+            
+              <category>数据库/SQL</category>
+            
+          
+            
+              <category>Linux</category>
+            
+          
+            
+              <category>后端框架</category>
+            
+          
+            
+              <category>虚拟化容器</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>【linux下docker_mysql的安装并连接】</title>
         <link>https://lu-dashuai.github.io/posts/blogs/linux%E4%B8%8Bmysql%E7%9A%84%E5%AE%89%E8%A3%85/</link>
         <pubDate>Sat, 16 May 2020 15:51:57 +0800</pubDate>
