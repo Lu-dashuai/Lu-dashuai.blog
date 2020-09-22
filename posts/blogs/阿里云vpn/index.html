@@ -1628,13 +1628,13 @@
 <p>系统版本：centos7</p>
 </li>
 <li>
-<p>阿里云内网ip：172.19.92.83</p>
+<p>阿里云内网ip：172.19.92.XXX</p>
 </li>
 <li>
-<p>阿里云公网ip：101.133.232.24</p>
+<p>阿里云公网ip：101.133.232.XXX</p>
 </li>
 <li>
-<p>客户端公网ip：223.167.193.207</p>
+<p>客户端公网ip：223.167.193.XXX</p>
 </li>
 </ol>
 <blockquote>
@@ -1683,7 +1683,7 @@ yum install ppp ppp-devel pptpd iptables iptables-services -y
 <pre class="chroma"><code class="language-shell" data-lang="shell">2.1配置分配客户端的IP
 <span class="o">[</span>root@vpn ~<span class="o">]</span><span class="c1"># vim /etc/pptpd.conf</span>
 localip 192.168.80.100  <span class="c1">#本机内网ip地址。（如果服务器有公网ip就写公网ip）</span>
-remoteip   <span class="c1">#分配给客户端的网段,客户端公网ip所在网段（223.167.193.100-200,223.167.193.207 ）</span>
+remoteip   <span class="c1">#分配给客户端的网段,客户端公网ip所在网段（223.167.193.100-200,223.167.193.XXX ）</span>
   
 2.2配置option参数
 <span class="o">[</span>root@vpn ~<span class="o">]</span><span class="c1"># vim /etc/ppp/options.pptpd</span>
@@ -1829,9 +1829,9 @@ iptables -A INPUT -p gre -j ACCEPT
 <td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#注意网段和上面配置文件网段一致</span>
 <span class="c1"># eth0为本机网卡名（根据自己情况修改）</span>
-<span class="c1"># 这里注意 223.167.193.207/24 要写 vim /etc/pptpd.conf 对应的remoteip的具体地址</span>
+<span class="c1"># 这里注意 223.167.193.XXX/24 要写 vim /etc/pptpd.conf 对应的remoteip的具体地址</span>
 <span class="c1"># 能不能联网全靠这个命令了</span>
-<span class="o">[</span>root@vpn ~<span class="o">]</span><span class="c1"># iptables -t nat -A POSTROUTING -s 223.167.193.207/24 -o eth0 -j MASQUERADE</span>
+<span class="o">[</span>root@vpn ~<span class="o">]</span><span class="c1"># iptables -t nat -A POSTROUTING -s 223.167.193.XXX/24 -o eth0 -j MASQUERADE</span>
   
 <span class="c1">#保存规则</span>
 <span class="o">[</span>root@vpn ~<span class="o">]</span><span class="c1"># service iptables save</span>
@@ -1857,13 +1857,13 @@ ifconfig <span class="nv">$1</span> mtu <span class="m">1500</span>
 <p>\2. 点击左边VPN-&gt;添加VPN</p>
 <p>![img](D:\bds任务\markdown\pptp vpn隧道.assets\wps2.jpg)</p>
 <p>连接名称：自定义</p>
-<p>服务器：101.133.232.24</p>
+<p>服务器：101.133.232.XXX</p>
 <p>vpn类型：pptp</p>
 <p>用户名：test1<br />
 密码：abc123</p>
 <p>保存后连接即可</p>
 <p>\3. 验证是否成功</p>
-<p>Win+R 输入 cmd &mdash;-&gt; ping 172.19.92.83</p>
+<p>Win+R 输入 cmd &mdash;-&gt; ping 172.19.92.XXX</p>
 <p>![img](D:\bds任务\markdown\pptp vpn隧道.assets\wps3.jpg)</p>
 
     </article>

@@ -50,7 +50,7 @@
         <author>aluruihua@163.com (Jack.lu)</author>
         <atom:modified>Wed, 23 Sep 2020 00:40:01 +0800</atom:modified>
         <guid>https://lu-dashuai.github.io/posts/blogs/%E9%98%BF%E9%87%8C%E4%BA%91vpn/</guid>
-        <description>Linux-PPTP服务器搭建 环境 系统版本：centos7 阿里云内网ip：172.19.92.83 阿里云公网ip：101.133.232.2</description>
+        <description>Linux-PPTP服务器搭建 环境 系统版本：centos7 阿里云内网ip：172.19.92.XXX 阿里云公网ip：101.133.232.</description>
         
         <dc:creator>Jack.Lu</dc:creator>
         
