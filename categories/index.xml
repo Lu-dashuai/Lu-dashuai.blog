@@ -14,13 +14,49 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 01 Sep 2020 10:10:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 00:40:01 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>服务器软件</title>
+        <link>https://lu-dashuai.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AF%E4%BB%B6/</link>
+        <pubDate>Wed, 23 Sep 2020 00:40:01 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AF%E4%BB%B6/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>运维知识</title>
+        <link>https://lu-dashuai.github.io/categories/%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86/</link>
+        <pubDate>Wed, 23 Sep 2020 00:40:01 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        
+        <guid>https://lu-dashuai.github.io/categories/%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86/</guid>
+        <description></description>
+        
+        <dc:creator>Jack.lu</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>Linux</title>
@@ -275,24 +311,6 @@
       </item>
       
       <item>
-        <title>服务器软件</title>
-        <link>https://lu-dashuai.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AF%E4%BB%B6/</link>
-        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
-        <author>aluruihua@163.com (Jack.lu)</author>
-        
-        <guid>https://lu-dashuai.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AF%E4%BB%B6/</guid>
-        <description></description>
-        
-        <dc:creator>Jack.lu</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>毕业设计</title>
         <link>https://lu-dashuai.github.io/categories/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/</link>
         <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
@@ -317,24 +335,6 @@
         <author>aluruihua@163.com (Jack.lu)</author>
         
         <guid>https://lu-dashuai.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>Jack.lu</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>运维知识</title>
-        <link>https://lu-dashuai.github.io/categories/%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86/</link>
-        <pubDate>Tue, 16 Jan 2018 12:00:06 +0900</pubDate>
-        <author>aluruihua@163.com (Jack.lu)</author>
-        
-        <guid>https://lu-dashuai.github.io/categories/%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86/</guid>
         <description></description>
         
         <dc:creator>Jack.lu</dc:creator>

@@ -14,13 +14,47 @@
     <managingEditor>aluruihua@163.com (Jack.lu)</managingEditor>
     <webMaster>aluruihua@163.com (Jack.lu)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 01 Sep 2020 10:10:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 00:40:01 +0800</lastBuildDate>
     
         <atom:link href="https://lu-dashuai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>阿里云—vpn</title>
+        <link>https://lu-dashuai.github.io/posts/blogs/%E9%98%BF%E9%87%8C%E4%BA%91vpn/</link>
+        <pubDate>Wed, 23 Sep 2020 00:40:01 +0800</pubDate>
+        <author>aluruihua@163.com (Jack.lu)</author>
+        <atom:modified>Wed, 23 Sep 2020 00:40:01 +0800</atom:modified>
+        <guid>https://lu-dashuai.github.io/posts/blogs/%E9%98%BF%E9%87%8C%E4%BA%91vpn/</guid>
+        <description>Linux-PPTP服务器搭建 环境 系统版本：centos7 阿里云内网ip：172.19.92.83 阿里云公网ip：101.133.232.2</description>
+        
+        <dc:creator>Jack.Lu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Shell脚本</category>
+            
+          
+        
+        
+          
+            
+              <category>服务器软件</category>
+            
+          
+            
+              <category>运维知识</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Docker_ES集群搭建</title>
