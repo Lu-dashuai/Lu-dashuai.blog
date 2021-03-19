@@ -2497,6 +2497,146 @@
 <pre class="chroma"><code class="language-java" data-lang="java"> <span class="kd">implements</span> <span class="n">ApplicationRunner</span>
 </code></pre></td></tr></table>
 </div>
+</div><h2 id="集合开启多线程小算法">集合开启多线程小算法</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">
+<span class="nd">@org.junit.jupiter.api.Test</span>
+    <span class="kt">void</span> <span class="nf">test3</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">1</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">2</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">3</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">4</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">5</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">6</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">7</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">8</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">9</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">10</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">11</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">12</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">13</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">14</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">15</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">16</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">17</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">18</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">19</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">20</span><span class="o">);</span>
+        <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">21</span><span class="o">);</span>
+        <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">();</span>
+        <span class="kt">int</span> <span class="n">poolSize</span> <span class="o">=</span> <span class="n">10</span><span class="o">;</span><span class="c1">//10个线程
+</span><span class="c1"></span>        <span class="n">Double</span> <span class="n">threadSize</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">floor</span><span class="o">(</span><span class="n">size</span> <span class="o">/</span> <span class="n">poolSize</span><span class="o">);</span><span class="c1">//向下取整表示 每个线程的大小
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">lastThreadSize</span> <span class="o">=</span> <span class="n">threadSize</span><span class="o">.</span><span class="na">intValue</span><span class="o">()</span> <span class="o">+</span> <span class="o">(</span><span class="n">size</span> <span class="o">%</span> <span class="n">poolSize</span><span class="o">);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">size</span><span class="o">!=</span><span class="n">0</span> <span class="o">&amp;&amp;</span> <span class="n">size</span><span class="o">&gt;</span><span class="n">10</span><span class="o">){</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">poolSize</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">i</span><span class="o">==(</span><span class="n">poolSize</span><span class="o">-</span><span class="n">1</span><span class="o">)){</span>
+                    <span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list1</span> <span class="o">=</span> <span class="n">list</span><span class="o">.</span><span class="na">subList</span><span class="o">(</span><span class="n">i</span> <span class="o">*</span> <span class="n">threadSize</span><span class="o">.</span><span class="na">intValue</span><span class="o">(),</span> <span class="n">i</span> <span class="o">*</span> <span class="n">threadSize</span><span class="o">.</span><span class="na">intValue</span><span class="o">()</span> <span class="o">+</span> <span class="n">lastThreadSize</span><span class="o">);</span>
+                    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">*</span><span class="n">threadSize</span><span class="o">.</span><span class="na">intValue</span><span class="o">()+</span><span class="s">&#34;----&#34;</span><span class="o">+(</span><span class="n">i</span><span class="o">*</span><span class="n">threadSize</span><span class="o">.</span><span class="na">intValue</span><span class="o">()+</span><span class="n">lastThreadSize</span><span class="o">)+</span><span class="s">&#34;list:&#34;</span><span class="o">+</span><span class="n">list1</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list1</span> <span class="o">=</span> <span class="n">list</span><span class="o">.</span><span class="na">subList</span><span class="o">(</span><span class="n">i</span><span class="o">*</span><span class="n">threadSize</span><span class="o">.</span><span class="na">intValue</span><span class="o">(),</span> <span class="o">((</span><span class="n">i</span><span class="o">+</span><span class="n">1</span><span class="o">)</span> <span class="o">*</span> <span class="n">threadSize</span><span class="o">.</span><span class="na">intValue</span><span class="o">()));</span>
+                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">*</span><span class="n">threadSize</span><span class="o">.</span><span class="na">intValue</span><span class="o">()+</span><span class="s">&#34;&gt;&gt;&gt;&gt;&gt;&gt;&#34;</span><span class="o">+((</span><span class="n">i</span><span class="o">+</span><span class="n">1</span><span class="o">)</span> <span class="o">*</span> <span class="n">threadSize</span><span class="o">.</span><span class="na">intValue</span><span class="o">()-</span><span class="n">1</span><span class="o">)+</span><span class="s">&#34;list:&#34;</span><span class="o">+</span><span class="n">list1</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="array中统计出现次数">array中统计出现次数</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">
+<span class="nd">@org.junit.jupiter.api.Test</span>
+    <span class="kt">void</span> <span class="nf">test4</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">array</span><span class="o">[]={</span><span class="n">1</span><span class="o">,</span><span class="n">2</span><span class="o">,</span><span class="n">3</span><span class="o">,</span><span class="n">6</span><span class="o">,</span><span class="n">8</span><span class="o">,</span><span class="n">7</span><span class="o">,</span><span class="n">7</span><span class="o">,</span><span class="n">8</span><span class="o">,</span><span class="n">2</span><span class="o">,</span><span class="n">2</span><span class="o">,</span><span class="n">1</span><span class="o">,</span><span class="n">2</span><span class="o">};</span>
+        <span class="n">Set</span> <span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">set</span><span class="o">=</span><span class="k">new</span> <span class="n">HashSet</span><span class="o">&lt;&gt;();</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">array</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">i</span><span class="o">++)</span>
+        <span class="o">{</span>
+            <span class="n">set</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+        <span class="o">}</span>
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">=</span><span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;(</span><span class="n">set</span><span class="o">);</span>
+        <span class="n">Collections</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">list</span><span class="o">);</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">();</span><span class="n">i</span><span class="o">++)</span>
+        <span class="o">{</span>   <span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">array</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">j</span><span class="o">++)</span>
+            <span class="o">{</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">list</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">).</span><span class="na">equals</span><span class="o">(</span><span class="n">array</span><span class="o">[</span><span class="n">j</span><span class="o">])){</span>
+                    <span class="n">count</span><span class="o">++;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">list</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">)+</span><span class="s">&#34;:&#34;</span><span class="o">+</span><span class="n">count</span><span class="o">+</span><span class="s">&#34;次&#34;</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
 </div>
     </article>
     
@@ -3075,6 +3215,8 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#读取文件内容">读取文件内容</a></li>
     <li><a href="#springboot不要数据源启动">springboot不要数据源启动</a></li>
     <li><a href="#随springboot启动执行">随springboot启动执行</a></li>
+    <li><a href="#集合开启多线程小算法">集合开启多线程小算法</a></li>
+    <li><a href="#array中统计出现次数">array中统计出现次数</a></li>
   </ul>
 </nav>
   </div>
@@ -3841,7 +3983,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 
             <p class="caption">
                 
-                    ©2020, All Rights Reserved
+                    ©2021, All Rights Reserved
                 
             </p>
         
